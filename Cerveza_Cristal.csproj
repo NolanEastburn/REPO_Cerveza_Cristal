@@ -1,5 +1,4 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <AssemblyName>Cerveza_Cristal</AssemblyName>
@@ -13,6 +12,7 @@
       https://nuget.samboy.dev/v3/index.json
     </RestoreAdditionalProjectSources>
     <RootNamespace>Cerveza_Cristal</RootNamespace>
+    <GameRoot>$(HOME)/.local/share/Steam/steamapps/common/REPO</GameRoot>
   </PropertyGroup>
 
   <ItemGroup>
@@ -25,4 +25,10 @@
   <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
     <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
   </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="Build">
+    <Exec Command="cp ./$(OutputPath)/$(AssemblyName).dll $(GameRoot)/BepInEx/plugins"/>
+    <Exec Command="echo Copied DLL to $(GameRoot)/BepInEx/plugins"/>
+  </Target>
+
 </Project>
