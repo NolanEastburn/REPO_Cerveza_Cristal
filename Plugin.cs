@@ -11,8 +11,17 @@ public class Plugin : BaseUnityPlugin
 {
     internal static new ManualLogSource Logger;
 
+    private const string MOD_CONTENT_FOLDER = "nooterdooter_cerveza_cristal";
+    private const string RESOURCES_FOLDER = "res";
+    private const string MESH_FOLDER = "mesh";
+
     private Boolean spawned = false;
     private const float CRASH_TIME = 1;
+
+    private static void BuildAssetBundle()
+    {
+        
+    }
 
     private void Awake()
     {
@@ -22,6 +31,7 @@ public class Plugin : BaseUnityPlugin
 
     }
 
+
     private void Update()
     {
 
@@ -29,13 +39,10 @@ public class Plugin : BaseUnityPlugin
         if (Time.time >= CRASH_TIME && !spawned)
         {
 
-            ResourcesAPI resources = new ResourcesAPI();
-
             GameObject testValuable = new GameObject("testValuable");
             MeshFilter mf = testValuable.AddComponent<MeshFilter>();
             MeshRenderer mr = testValuable.AddComponent<MeshRenderer>();
             mr.material.color = new Color(1.0f, 0f, 0f);
-            //mf.sharedMesh = resources.Load("../Resources/Meshes/TestCone.fbx", typeof(Mesh)) as Mesh;
 
             mf.sharedMesh = Resources.Load<Mesh>("Meshes/TestCone.fbx");
 
