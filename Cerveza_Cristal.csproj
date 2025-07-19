@@ -12,7 +12,7 @@
       https://nuget.samboy.dev/v3/index.json
     </RestoreAdditionalProjectSources>
     <RootNamespace>Cerveza_Cristal</RootNamespace>
-    <GameRoot>$(HOME)/.local/share/Steam/steamapps/common/REPO</GameRoot>
+    <GameRoot>$(REPO_STEAM)/steamapps/common/REPO</GameRoot>
   </PropertyGroup>
 
   <ItemGroup>
@@ -31,7 +31,7 @@
 
 
   <Target Name="PostBuild" AfterTargets="Build">
-    <Exec Command="cp ./$(OutputPath)/$(AssemblyName).dll $(GameRoot)/BepInEx/plugins"/>
+    <Exec Command="cp ./$(OutputPath)/$(AssemblyName).dll &quot;$(GameRoot)/BepInEx/plugins&quot;"/>
     <Exec Command="echo Copied DLL to $(GameRoot)/BepInEx/plugins"/>
   </Target>
 
