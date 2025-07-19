@@ -5,3 +5,7 @@ obj/**
 
 # Generated from .csproj
 *.sln
+
+# Ignore decompilation artifacts, for reference only
+REPO_Decomp
+REPO_Decomp/** */

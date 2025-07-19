@@ -28,17 +28,13 @@ public class Plugin : BaseUnityPlugin
         // Plugin startup logic
         Logger = base.Logger;
         Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
-
     }
 
 
     private void Update()
     {
-
-
         if (Time.time >= CRASH_TIME && !spawned)
         {
-
             GameObject testValuable = new GameObject("testValuable");
             MeshFilter mf = testValuable.AddComponent<MeshFilter>();
             MeshRenderer mr = testValuable.AddComponent<MeshRenderer>();

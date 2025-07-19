@@ -13,6 +13,9 @@
     </RestoreAdditionalProjectSources>
     <RootNamespace>Cerveza_Cristal</RootNamespace>
     <GameRoot>$(REPO_STEAM)/steamapps/common/REPO</GameRoot>
+    <DecompFolder>./REPO_Decomp</DecompFolder>
+    <REPODLLName>Assembly-CSharp</REPODLLName>
+    <REPODLLPath>$(GameRoot)/REPO_Data/Managed/$(REPODLLName).dll</REPODLLPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,19 +23,31 @@
     <PackageReference Include="BepInEx.Core" Version="5.*" />
     <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
     <PackageReference Include="UnityEngine.Modules" Version="2022.3.21" IncludeAssets="compile" />
-    <Reference Include="Assembly-CSharp">
-      <HintPath>$(GameRoot)/REPO_Data/Managed/Assembly-CSharp.dll</HintPath>
+    <Reference Include="$(REPODLLName)">
+      <HintPath>$(REPODLLPath)</HintPath>
     </Reference>
+    <Compile Remove="$(DecompFolder)/*"/>
+    <None Include="$(DecompFolder)/*"/>
   </ItemGroup>
   
   <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
     <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
   </ItemGroup>
 
-
   <Target Name="PostBuild" AfterTargets="Build">
-    <Exec Command="cp ./$(OutputPath)/$(AssemblyName).dll &quot;$(GameRoot)/BepInEx/plugins&quot;"/>
-    <Exec Command="echo Copied DLL to $(GameRoot)/BepInEx/plugins"/>
+    <Copy SourceFiles="./$(OutputPath)/$(AssemblyName).dll" DestinationFolder="$(GameRoot)/BepInEx/plugins"/>
+    <Message Text="Copied DLL to $(GameRoot)/BepInEx/plugins" Importance="high"/>
+  </Target>
+
+  <Target Name="PostClean" AfterTargets="Clean">
+    <RemoveDir Directories="$(DecompFolder)"/>
+  </Target>
+
+  <Target Name="REPO_Decomp">
+    <MakeDir Directories="$(DecompFolder)"/>
+    <Message Text="Decompiling REPO!" Importance="high"/>
+    <Exec Command="ilspycmd -p -o &quot;$(DecompFolder)&quot; &quot;$(REPODLLPath)&quot;"/>
+    <Message Text="Done decompiling REPO!" Importance="high"/>
   </Target>
 
 </Project>
