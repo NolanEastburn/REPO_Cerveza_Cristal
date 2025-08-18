@@ -26,8 +26,8 @@
     <Reference Include="$(REPODLLName)">
       <HintPath>$(REPODLLPath)</HintPath>
     </Reference>
-    <Compile Remove="$(DecompFolder)/*"/>
-    <None Include="$(DecompFolder)/*"/>
+    <Compile Remove="$(DecompFolder)/**"/>
+    <Compile Remove="AssetBundleCreation/**"/>
   </ItemGroup>
   
   <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
