@@ -36,6 +36,7 @@
 
   <Target Name="PostBuild" AfterTargets="Build">
     <Copy SourceFiles="./$(OutputPath)/$(AssemblyName).dll" DestinationFolder="$(GameRoot)/BepInEx/plugins"/>
+    <Exec Command="cp -r nooterdooter_cerveza_cristal $(GameRoot)/BepInEx/plugins"/>
     <Message Text="Copied DLL to $(GameRoot)/BepInEx/plugins" Importance="high"/>
   </Target>
 

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using System.Runtime.CompilerServices;
 using BepInEx;
 using BepInEx.Logging;
 using UnityEngine;
@@ -13,15 +15,13 @@ public class Plugin : BaseUnityPlugin
 
     private const string MOD_CONTENT_FOLDER = "nooterdooter_cerveza_cristal";
     private const string RESOURCES_FOLDER = "res";
-    private const string MESH_FOLDER = "mesh";
 
     private Boolean spawned = false;
-    private const float CRASH_TIME = 1;
+    private const float CRASH_TIME = 15;
 
-    private static void BuildAssetBundle()
-    {
-        
-    }
+    private static string pluginRoot = Path.Combine(Paths.BepInExRootPath, "plugins");
+
+    private static string assetBundlePath = Path.Combine(pluginRoot, MOD_CONTENT_FOLDER, RESOURCES_FOLDER, "AssetBundles", "primaryassetbundle");
 
     private void Awake()
     {
@@ -35,22 +35,19 @@ public class Plugin : BaseUnityPlugin
     {
         if (Time.time >= CRASH_TIME && !spawned)
         {
-            GameObject testValuable = new GameObject("testValuable");
-            MeshFilter mf = testValuable.AddComponent<MeshFilter>();
-            MeshRenderer mr = testValuable.AddComponent<MeshRenderer>();
-            mr.material.color = new Color(1.0f, 0f, 0f);
-
-            mf.sharedMesh = Resources.Load<Mesh>("Meshes/TestCone.fbx");
-
-            if (mf.sharedMesh == null)
+            AssetBundle assetBundle = AssetBundle.LoadFromFile(assetBundlePath);
+            if (assetBundle == null)
             {
-                Logger.LogError("Could not load the cone mesh!");
+                Logger.LogError("Failed to load asset bundle!");
             }
+
+
+            GameObject testValuable = assetBundle.LoadAsset<GameObject>("Cone");
+            GameObject foo = Instantiate(testValuable);
+
             // Find truck.
 
             GameObject truck = null;
-
-
             foreach (GameObject g in UnityEngine.SceneManagement.SceneManager.GetActiveScene().GetRootGameObjects())
             {
                 TruckLandscapeScroller obj = g.GetComponentInChildren<TruckLandscapeScroller>();
@@ -62,14 +59,21 @@ public class Plugin : BaseUnityPlugin
             }
 
             spawned = true;
-            GameObject thing = UnityEngine.Object.Instantiate(AssetManager.instance.surplusValuableBig, truck.transform.position + new Vector3(-35, 10, 0), Quaternion.identity);
-            thing.transform.localScale = new Vector3(5, 10, 5);
-            Logger.LogInfo("Spawned a thing!");
+            foo.transform.position = truck.transform.position + new Vector3(-35, 5, 0);
+            foo.AddComponent(typeof(Rotate));
 
-            // Add the valuable to the scene.
-            testValuable.SetActive(true);
+            //foo.transform.localScale = new Vector3(1.0f, 1.0f, 2.0f);
+            Logger.LogInfo("Spawned a thing!");
         }
 
     }
 
+}
+
+class Rotate : MonoBehaviour
+{
+    public void Update()
+    {
+        gameObject.transform.rotation *= Quaternion.Euler(360 * Time.deltaTime, 0, 0);
+    }
 }
