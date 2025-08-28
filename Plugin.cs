@@ -5,6 +5,7 @@ using BepInEx;
 using BepInEx.Logging;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Photon.Pun;
 
 namespace Cerveza_Cristal;
 
@@ -16,7 +17,9 @@ public class Plugin : BaseUnityPlugin
     private const string MOD_CONTENT_FOLDER = "nooterdooter_cerveza_cristal";
     private const string RESOURCES_FOLDER = "res";
 
-    private Boolean spawned = false;
+    private Boolean assetBundlesLoaded = false;
+
+    private Boolean valueableAdded = false;
     private const float CRASH_TIME = 15;
 
     private static string pluginRoot = Path.Combine(Paths.BepInExRootPath, "plugins");
@@ -31,9 +34,55 @@ public class Plugin : BaseUnityPlugin
     }
 
 
+    // private void Update()
+    // {
+    //     if (Time.time >= CRASH_TIME && !spawned)
+    //     {
+    //         AssetBundle assetBundle = AssetBundle.LoadFromFile(assetBundlePath);
+    //         if (assetBundle == null)
+    //         {
+    //             Logger.LogError("Failed to load asset bundle!");
+    //         }
+
+
+    //         GameObject testValuable = assetBundle.LoadAsset<GameObject>("Cone");
+    //         GameObject foo = Instantiate(testValuable);
+
+    //         // Find truck.
+
+    //         GameObject truck = null;
+    //         foreach (GameObject g in UnityEngine.SceneManagement.SceneManager.GetActiveScene().GetRootGameObjects())
+    //         {
+    //             TruckLandscapeScroller obj = g.GetComponentInChildren<TruckLandscapeScroller>();
+
+    //             if (obj != null)
+    //             {
+    //                 truck = obj.gameObject;
+    //             }
+    //         }
+
+    //         spawned = true;
+    //         foo.transform.position = truck.transform.position + new Vector3(-35, 5, 0);
+    //         foo.AddComponent(typeof(Rotate));
+
+    //         //foo.transform.localScale = new Vector3(1.0f, 1.0f, 2.0f);
+    //         Logger.LogInfo("Spawned a thing!");
+
+    //         // Wait until RoundDirector has been created.
+    //         while (RoundDirector.instance == null)
+    //         {
+
+    //         }
+
+
+    //     }
+
+    // }
+
     private void Update()
     {
-        if (Time.time >= CRASH_TIME && !spawned)
+        GameObject testValuable = null;
+        if (!assetBundlesLoaded)
         {
             AssetBundle assetBundle = AssetBundle.LoadFromFile(assetBundlePath);
             if (assetBundle == null)
@@ -41,29 +90,44 @@ public class Plugin : BaseUnityPlugin
                 Logger.LogError("Failed to load asset bundle!");
             }
 
+            testValuable = assetBundle.LoadAsset<GameObject>("Cone");
 
-            GameObject testValuable = assetBundle.LoadAsset<GameObject>("Cone");
-            GameObject foo = Instantiate(testValuable);
+            ValuableObject v = testValuable.AddComponent(typeof(ValuableObject)) as ValuableObject;
+            v.valuePreset = ScriptableObject.CreateInstance(typeof(Value)) as Value;
+            v.valuePreset.valueMin = 1000.0f;
+            v.valuePreset.valueMax = 1000.0f;
+            v.physAttributePreset = ScriptableObject.CreateInstance(typeof(PhysAttribute)) as PhysAttribute;
+            v.physAttributePreset.mass = 100.0f;
+            v.volumeType = ValuableVolume.Type.Medium;
+            
+            testValuable.AddComponent(typeof(Rotate));
+            testValuable.AddComponent(typeof(PhotonTransformView));
+            testValuable.AddComponent(typeof(PhysGrabObject));
+            testValuable.AddComponent(typeof(RoomVolumeCheck));
+            testValuable.AddComponent(typeof(Rigidbody));
+            testValuable.AddComponent(typeof(BoxCollider));
+            
 
-            // Find truck.
+            assetBundlesLoaded = true;
+        }
 
-            GameObject truck = null;
-            foreach (GameObject g in UnityEngine.SceneManagement.SceneManager.GetActiveScene().GetRootGameObjects())
+        if (assetBundlesLoaded && !valueableAdded)
+        {
+            if (RunManager.instance != null)
             {
-                TruckLandscapeScroller obj = g.GetComponentInChildren<TruckLandscapeScroller>();
 
-                if (obj != null)
+                foreach (Level level in RunManager.instance.levels)
                 {
-                    truck = obj.gameObject;
+                    foreach (LevelValuables lv in level.ValuablePresets)
+                    {
+                        lv.medium.Add(testValuable);
+                    }
+
+                    Logger.LogInfo("Added test valueable to level " + level.name);
                 }
+
+                valueableAdded = true;
             }
-
-            spawned = true;
-            foo.transform.position = truck.transform.position + new Vector3(-35, 5, 0);
-            foo.AddComponent(typeof(Rotate));
-
-            //foo.transform.localScale = new Vector3(1.0f, 1.0f, 2.0f);
-            Logger.LogInfo("Spawned a thing!");
         }
 
     }
@@ -72,8 +136,27 @@ public class Plugin : BaseUnityPlugin
 
 class Rotate : MonoBehaviour
 {
+    private Boolean loadMessage = true;
+
     public void Update()
     {
-        gameObject.transform.rotation *= Quaternion.Euler(360 * Time.deltaTime, 0, 0);
+        if (loadMessage)
+        {
+            Plugin.Logger.LogInfo("Loaded!");
+            loadMessage = false;
+        }
+
+        //gameObject.transform.rotation *= Quaternion.Euler(360 * Time.deltaTime, 0, 0);
+
+            // if (Plugin.Logger != null)
+            // {
+
+            //     Plugin.Logger.LogInfo("I exist!!!");
+
+            //     if (gameObject != null)
+            //     {
+            //         Plugin.Logger.LogInfo("I am in the world!!!!");
+            //     }
+            // }
     }
 }

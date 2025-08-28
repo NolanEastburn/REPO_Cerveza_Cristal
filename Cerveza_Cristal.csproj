@@ -16,6 +16,8 @@
     <DecompFolder>./REPO_Decomp</DecompFolder>
     <REPODLLName>Assembly-CSharp</REPODLLName>
     <REPODLLPath>$(GameRoot)/REPO_Data/Managed/$(REPODLLName).dll</REPODLLPath>
+    <PUNDLLName>PhotonUnityNetworking</PUNDLLName>
+    <PUNDLLPath>$(GameRoot)/REPO_Data/Managed/$(PUNDLLName).dll</PUNDLLPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -25,6 +27,9 @@
     <PackageReference Include="UnityEngine.Modules" Version="2022.3.21" IncludeAssets="compile" />
     <Reference Include="$(REPODLLName)">
       <HintPath>$(REPODLLPath)</HintPath>
+    </Reference>
+    <Reference Include="$(PUNDLLName)">
+      <HintPath>$(PUNDLLPath)</HintPath>
     </Reference>
     <Compile Remove="$(DecompFolder)/**"/>
     <Compile Remove="AssetBundleCreation/**"/>
