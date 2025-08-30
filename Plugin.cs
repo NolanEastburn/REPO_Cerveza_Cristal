@@ -1,10 +1,7 @@
-﻿using System;
-using System.IO;
-using System.Runtime.CompilerServices;
+﻿using System.IO;
 using BepInEx;
 using BepInEx.Logging;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using Photon.Pun;
 
 namespace Cerveza_Cristal;
@@ -17,10 +14,9 @@ public class Plugin : BaseUnityPlugin
     private const string MOD_CONTENT_FOLDER = "nooterdooter_cerveza_cristal";
     private const string RESOURCES_FOLDER = "res";
 
-    private Boolean assetBundlesLoaded = false;
+    private bool assetBundlesLoaded = false;
 
-    private Boolean valueableAdded = false;
-    private const float CRASH_TIME = 15;
+    private bool valueableAdded = false;
 
     private static string pluginRoot = Path.Combine(Paths.BepInExRootPath, "plugins");
 
@@ -32,52 +28,6 @@ public class Plugin : BaseUnityPlugin
         Logger = base.Logger;
         Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
     }
-
-
-    // private void Update()
-    // {
-    //     if (Time.time >= CRASH_TIME && !spawned)
-    //     {
-    //         AssetBundle assetBundle = AssetBundle.LoadFromFile(assetBundlePath);
-    //         if (assetBundle == null)
-    //         {
-    //             Logger.LogError("Failed to load asset bundle!");
-    //         }
-
-
-    //         GameObject testValuable = assetBundle.LoadAsset<GameObject>("Cone");
-    //         GameObject foo = Instantiate(testValuable);
-
-    //         // Find truck.
-
-    //         GameObject truck = null;
-    //         foreach (GameObject g in UnityEngine.SceneManagement.SceneManager.GetActiveScene().GetRootGameObjects())
-    //         {
-    //             TruckLandscapeScroller obj = g.GetComponentInChildren<TruckLandscapeScroller>();
-
-    //             if (obj != null)
-    //             {
-    //                 truck = obj.gameObject;
-    //             }
-    //         }
-
-    //         spawned = true;
-    //         foo.transform.position = truck.transform.position + new Vector3(-35, 5, 0);
-    //         foo.AddComponent(typeof(Rotate));
-
-    //         //foo.transform.localScale = new Vector3(1.0f, 1.0f, 2.0f);
-    //         Logger.LogInfo("Spawned a thing!");
-
-    //         // Wait until RoundDirector has been created.
-    //         while (RoundDirector.instance == null)
-    //         {
-
-    //         }
-
-
-    //     }
-
-    // }
 
     private void Update()
     {
@@ -136,7 +86,7 @@ public class Plugin : BaseUnityPlugin
 
 class Rotate : MonoBehaviour
 {
-    private Boolean loadMessage = true;
+    private bool loadMessage = true;
 
     public void Update()
     {
@@ -145,18 +95,5 @@ class Rotate : MonoBehaviour
             Plugin.Logger.LogInfo("Loaded!");
             loadMessage = false;
         }
-
-        //gameObject.transform.rotation *= Quaternion.Euler(360 * Time.deltaTime, 0, 0);
-
-            // if (Plugin.Logger != null)
-            // {
-
-            //     Plugin.Logger.LogInfo("I exist!!!");
-
-            //     if (gameObject != null)
-            //     {
-            //         Plugin.Logger.LogInfo("I am in the world!!!!");
-            //     }
-            // }
     }
 }
