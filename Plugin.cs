@@ -49,6 +49,13 @@ public class Plugin : BaseUnityPlugin
             v.physAttributePreset = ScriptableObject.CreateInstance(typeof(PhysAttribute)) as PhysAttribute;
             v.physAttributePreset.mass = 100.0f;
             v.volumeType = ValuableVolume.Type.Medium;
+            v.durabilityPreset = ScriptableObject.CreateInstance(typeof(Durability)) as Durability;
+            //v.audioPreset = ScriptableObject.CreateInstance(typeof(PhysAudio)) as PhysAudio;
+            v.particleColors = new Gradient();
+            v.particleColors.colorKeys = new GradientColorKey[1];
+            v.particleColors.colorKeys[0] = new GradientColorKey(Color.white, 0.0f);
+            v.particleColors.alphaKeys = new GradientAlphaKey[1];
+            v.particleColors.alphaKeys[0] = new GradientAlphaKey(1.0f, 0.0f);
             
             testValuable.AddComponent(typeof(Rotate));
             testValuable.AddComponent(typeof(PhotonTransformView));
@@ -56,6 +63,7 @@ public class Plugin : BaseUnityPlugin
             testValuable.AddComponent(typeof(RoomVolumeCheck));
             testValuable.AddComponent(typeof(Rigidbody));
             testValuable.AddComponent(typeof(BoxCollider));
+            testValuable.AddComponent(typeof(PhysGrabObjectImpactDetector));
             
 
             assetBundlesLoaded = true;
