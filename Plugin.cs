@@ -3,6 +3,7 @@ using BepInEx;
 using BepInEx.Logging;
 using UnityEngine;
 using Photon.Pun;
+using System;
 
 namespace Cerveza_Cristal;
 
@@ -47,7 +48,7 @@ public class Plugin : BaseUnityPlugin
             v.valuePreset.valueMin = 1000.0f;
             v.valuePreset.valueMax = 1000.0f;
             v.physAttributePreset = ScriptableObject.CreateInstance(typeof(PhysAttribute)) as PhysAttribute;
-            v.physAttributePreset.mass = 100.0f;
+            v.physAttributePreset.mass = 2.0f;
             v.volumeType = ValuableVolume.Type.Medium;
             v.durabilityPreset = ScriptableObject.CreateInstance(typeof(Durability)) as Durability;
             //v.audioPreset = ScriptableObject.CreateInstance(typeof(PhysAudio)) as PhysAudio;
@@ -56,14 +57,19 @@ public class Plugin : BaseUnityPlugin
             v.particleColors.colorKeys[0] = new GradientColorKey(Color.white, 0.0f);
             v.particleColors.alphaKeys = new GradientAlphaKey[1];
             v.particleColors.alphaKeys[0] = new GradientAlphaKey(1.0f, 0.0f);
-            
+
             testValuable.AddComponent(typeof(Rotate));
             testValuable.AddComponent(typeof(PhotonTransformView));
             testValuable.AddComponent(typeof(PhysGrabObject));
             testValuable.AddComponent(typeof(RoomVolumeCheck));
             testValuable.AddComponent(typeof(Rigidbody));
-            testValuable.AddComponent(typeof(BoxCollider));
             testValuable.AddComponent(typeof(PhysGrabObjectImpactDetector));
+            testValuable.AddComponent(typeof(PhotonView));
+            testValuable.AddComponent(typeof(CapsuleCollider));
+            testValuable.AddComponent(typeof(PhysGrabObjectCollider));
+
+            testValuable.tag = "Phys Grab Object";
+            testValuable.name = "Test Valuable";
             
 
             assetBundlesLoaded = true;
@@ -85,6 +91,12 @@ public class Plugin : BaseUnityPlugin
                 }
 
                 valueableAdded = true;
+
+                Logger.LogInfo(RunManager.instance.levels[0].ValuablePresets[0].medium[0].name);
+                foreach (Component c in RunManager.instance.levels[0].ValuablePresets[0].medium[0].GetComponentsInChildren<Collider>())
+                {
+                    Logger.LogInfo(c.gameObject.name);
+                }
             }
         }
 
