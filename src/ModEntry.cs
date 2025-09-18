@@ -8,7 +8,7 @@ using System;
 namespace Cerveza_Cristal;
 
 [BepInPlugin(MyPluginInfo.PLUGIN_GUID, MyPluginInfo.PLUGIN_NAME, MyPluginInfo.PLUGIN_VERSION)]
-public class Plugin : BaseUnityPlugin
+public class ModEntry : BaseUnityPlugin
 {
     internal static new ManualLogSource Logger;
 
@@ -33,6 +33,7 @@ public class Plugin : BaseUnityPlugin
     private void Update()
     {
         GameObject testValuable = null;
+
         if (!assetBundlesLoaded)
         {
             AssetBundle assetBundle = AssetBundle.LoadFromFile(assetBundlePath);
@@ -65,12 +66,12 @@ public class Plugin : BaseUnityPlugin
             testValuable.AddComponent(typeof(Rigidbody));
             testValuable.AddComponent(typeof(PhysGrabObjectImpactDetector));
             testValuable.AddComponent(typeof(PhotonView));
-            testValuable.AddComponent(typeof(CapsuleCollider));
+            testValuable.AddComponent(typeof(BoxCollider));
             testValuable.AddComponent(typeof(PhysGrabObjectCollider));
 
             testValuable.tag = "Phys Grab Object";
             testValuable.name = "Test Valuable";
-            
+
 
             assetBundlesLoaded = true;
         }
@@ -98,6 +99,8 @@ public class Plugin : BaseUnityPlugin
                     Logger.LogInfo(c.gameObject.name);
                 }
             }
+
+            PhotonNetwork.PrefabPool = new ModPrefabPool(testValuable);
         }
 
     }
@@ -112,8 +115,56 @@ class Rotate : MonoBehaviour
     {
         if (loadMessage)
         {
-            Plugin.Logger.LogInfo("Loaded!");
+            ModEntry.Logger.LogInfo("Loaded!");
             loadMessage = false;
+        }
+    }
+}
+
+class ModPrefabPool : IPunPrefabPool
+{
+    private IPunPrefabPool _defaultPool { set; get; } = null;
+
+    // TODO: Replace with registry!!!
+    private GameObject _go { set; get; } = null;
+
+    private bool IsModAddition(string prefabId)
+    {
+        // TODO: Update!!!
+        return prefabId == "Valuables/03 Medium/Test Valuable";
+    }
+
+    public ModPrefabPool(GameObject go)
+    {
+        _defaultPool = new DefaultPool();
+        _go = go;
+
+        ModEntry.Logger.LogInfo("Created prefab pool!");
+    }
+
+    public void Destroy(GameObject gameObject)
+    {
+        if (IsModAddition(gameObject.name))
+        {
+            // TODO: Update!!!
+        }
+        else
+        {
+            _defaultPool.Destroy(gameObject);
+        }
+    }
+
+    public GameObject Instantiate(string prefabId, Vector3 position, Quaternion rotation)
+    {
+        ModEntry.Logger.LogInfo("Attempting to instantiate " + prefabId);
+
+        if (IsModAddition(prefabId))
+        {
+            return UnityEngine.Object.Instantiate(_go, position, rotation);
+        }
+        else
+        {
+            return _defaultPool.Instantiate(prefabId, position, rotation);
         }
     }
 }
