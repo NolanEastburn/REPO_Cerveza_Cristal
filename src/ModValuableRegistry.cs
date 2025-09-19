@@ -8,7 +8,7 @@ using System;
 
 namespace Cerveza_Cristal;
 
-class ModRegistry
+class ModValuableRegistry
 {
     public struct Data
     {
@@ -52,12 +52,15 @@ class ModRegistry
 
     private AssetBundle _assetBundle { get; set; }
 
+    private ManualLogSource _logger { get; set; }
+
     public void Register(string assetName, Data data)
     {
         GameObject go = _assetBundle.LoadAsset<GameObject>(assetName);
 
         if (go != null)
         {
+            
             // Add components
             go.AddComponent(typeof(PhotonTransformView));
             go.AddComponent(typeof(PhysGrabObject));
@@ -65,6 +68,13 @@ class ModRegistry
             go.AddComponent(typeof(Rigidbody));
             go.AddComponent(typeof(PhysGrabObjectImpactDetector));
             go.AddComponent(typeof(PhotonView));
+
+            if (!go.GetComponent<Collider>())
+            {
+                _logger.LogWarning(data.Name+ " does not have a collider! Adding a BoxCollider!");
+                go.AddComponent(typeof(BoxCollider));
+            }
+
             go.AddComponent(typeof(BoxCollider));
             go.AddComponent(typeof(PhysGrabObjectCollider));
 
@@ -85,13 +95,14 @@ class ModRegistry
         }
         else
         {
-            // TODO: Add some sort of exception here.
+            _logger.LogError("Could not register GameObject " + assetName + " as it does not exist in the asset bundle!");
         }
     }
 
-    public ModRegistry(AssetBundle assetBundle)
+    public ModValuableRegistry(AssetBundle assetBundle, ManualLogSource logger)
     {
         _assetBundle = assetBundle;
+        _logger = logger;
 
         Registry = new Dictionary<string, (GameObject, Data)>();
     }
