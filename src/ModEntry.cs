@@ -3,9 +3,6 @@ using BepInEx;
 using BepInEx.Logging;
 using UnityEngine;
 using Photon.Pun;
-using System;
-using UnityEngine.UIElements.Collections;
-using System.Collections.Generic;
 
 namespace Cerveza_Cristal;
 
@@ -38,9 +35,10 @@ public class ModEntry : BaseUnityPlugin
 
     private void Update()
     {
+        Logger.LogInfo("sdfopijijosdojifdsjoidsf");
         if (!assetBundlesLoaded && !_failedToLoadAssetBundle)
         {
-            
+
             AssetBundle assetBundle = AssetBundle.LoadFromFile(assetBundlePath);
             if (assetBundle == null)
             {
@@ -108,6 +106,8 @@ public class ModEntry : BaseUnityPlugin
             }
 
             PhotonNetwork.PrefabPool = new ModPrefabPool(_modValuableRegistry, Logger);
+
+            gameObject.SetActive(false);
         }
 
     }

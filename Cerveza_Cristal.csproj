@@ -19,6 +19,8 @@
     <PUNDLLName>PhotonUnityNetworking</PUNDLLName>
     <PUNDLLPath>$(GameRoot)/REPO_Data/Managed/$(PUNDLLName).dll</PUNDLLPath>
     <ModFolderName>nooterdooter_cerveza_cristal</ModFolderName>
+    <REPOPluginFolderPath>$(GameRoot)/BepInEx/plugins/</REPOPluginFolderPath>
+    <ModFolderPath>$(REPOPluginFolderPath)/$(ModFolderName)</ModFolderPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -41,9 +43,11 @@
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="Build">
-    <Exec Command="cp -r $(ModFolderName) $(GameRoot)/BepInEx/plugins"/>
-        <Copy SourceFiles="./$(OutputPath)/$(AssemblyName).dll" DestinationFolder="$(GameRoot)/BepInEx/plugins/$(ModFolderName)"/>
-    <Message Text="Copied DLL to $(GameRoot)/BepInEx/plugins" Importance="high"/>
+    <RemoveDir Directories="$(ModFolderPath)"/>
+    <Exec Command="cp -r $(ModFolderName) $(REPOPluginFolderPath)"/>
+    <Copy SourceFiles="./$(OutputPath)/$(AssemblyName).dll" DestinationFolder="$(ModFolderPath)"/>
+    <Message Text="Copied mod files to $(REPOPluginFolderPath)" Importance="high"/>
+
   </Target>
 
   <Target Name="PostClean" AfterTargets="Clean">
