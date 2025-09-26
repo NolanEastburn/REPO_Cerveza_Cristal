@@ -5,13 +5,14 @@ using UnityEngine;
 using Photon.Pun;
 using System;
 using UnityEngine.UIElements.Collections;
+using System.Collections.Generic;
 
 namespace Cerveza_Cristal;
 
 [BepInPlugin(MyPluginInfo.PLUGIN_GUID, MyPluginInfo.PLUGIN_NAME, MyPluginInfo.PLUGIN_VERSION)]
 public class ModEntry : BaseUnityPlugin
 {
-    internal static new ManualLogSource Logger;
+    internal static new ManualLogSource Logger = null;
 
     private const string MOD_CONTENT_FOLDER = "nooterdooter_cerveza_cristal";
     private const string RESOURCES_FOLDER = "res";
@@ -106,49 +107,9 @@ public class ModEntry : BaseUnityPlugin
                 valueableAdded = true;
             }
 
-            PhotonNetwork.PrefabPool = new ModPrefabPool(_modValuableRegistry);
+            PhotonNetwork.PrefabPool = new ModPrefabPool(_modValuableRegistry, Logger);
         }
 
     }
 
-}
-
-class ModPrefabPool : IPunPrefabPool
-{
-    private IPunPrefabPool _defaultPool { set; get; } = null;
-
-    private ModValuableRegistry _modValuableRegistry { get; set; }
-
-    private string ExtractGameObjectName(string prefabId)
-    {
-        return prefabId.Substring(prefabId.LastIndexOf('/') + 1);
-    }
-
-    private bool IsModAddition(string prefabId)
-    {
-        return _modValuableRegistry.Registry.ContainsKey(ExtractGameObjectName(prefabId));
-    }
-
-    public ModPrefabPool(ModValuableRegistry modValuableRegistry)
-    {
-        _defaultPool = PhotonNetwork.PrefabPool;
-        _modValuableRegistry = modValuableRegistry;
-    }
-
-    public void Destroy(GameObject gameObject)
-    {
-        _defaultPool.Destroy(gameObject);
-    }
-
-    public GameObject Instantiate(string prefabId, Vector3 position, Quaternion rotation)
-    {
-        if (IsModAddition(prefabId))
-        {
-            return UnityEngine.Object.Instantiate(_modValuableRegistry.Registry.Get(ExtractGameObjectName(prefabId)).Item1, position, rotation);
-        }
-        else
-        {
-            return _defaultPool.Instantiate(prefabId, position, rotation);
-        }
-    }
 }

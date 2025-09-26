@@ -1,10 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
-using System.IO;
-using BepInEx;
 using BepInEx.Logging;
 using Photon.Pun;
-using System;
+using UnityEngine.UIElements.Collections;
 
 namespace Cerveza_Cristal;
 
@@ -54,13 +52,13 @@ class ModValuableRegistry
 
     private ManualLogSource _logger { get; set; }
 
-    public void Register(string assetName, Data data)
+    public void Register(string assetName, Data data, List<System.Type> components=null)
     {
         GameObject go = _assetBundle.LoadAsset<GameObject>(assetName);
 
         if (go != null)
         {
-            
+
             // Add components
             go.AddComponent(typeof(PhotonTransformView));
             go.AddComponent(typeof(PhysGrabObject));
@@ -71,7 +69,7 @@ class ModValuableRegistry
 
             if (!go.GetComponent<Collider>())
             {
-                _logger.LogWarning(data.Name+ " does not have a collider! Adding a BoxCollider!");
+                _logger.LogWarning(data.Name + " does not have a collider! Adding a BoxCollider!");
                 go.AddComponent(typeof(BoxCollider));
             }
 
@@ -90,6 +88,14 @@ class ModValuableRegistry
 
             go.tag = "Phys Grab Object";
             go.name = data.Name;
+
+            if (components != null)
+            {
+                foreach (System.Type c in components)
+                {
+                    go.AddComponent(c);
+                }
+            }
 
             Registry.Add(data.Name, (go, data));
         }
