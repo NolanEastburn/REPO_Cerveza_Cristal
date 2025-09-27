@@ -35,7 +35,6 @@ public class ModEntry : BaseUnityPlugin
 
     private void Update()
     {
-        Logger.LogInfo("sdfopijijosdojifdsjoidsf");
         if (!assetBundlesLoaded && !_failedToLoadAssetBundle)
         {
 

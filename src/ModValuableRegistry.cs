@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using BepInEx.Logging;
 using Photon.Pun;
-using UnityEngine.UIElements.Collections;
 
 namespace Cerveza_Cristal;
 
@@ -20,7 +19,6 @@ class ModValuableRegistry
         public float Mass { get; set; }
         public ValuableVolume.Type ValuableVolumeType { get; set; }
         public Gradient ParticleGradient { get; set; }
-
 
         public Data(string name, (float, float)? value = null, float mass = DEFAULT_MASS, ValuableVolume.Type? valuableVolumeType = null, Gradient particleGraident = null)
         {
@@ -51,8 +49,19 @@ class ModValuableRegistry
     private AssetBundle _assetBundle { get; set; }
 
     private ManualLogSource _logger { get; set; }
+    
+            class ModValuableDefaultBehaviour : MonoBehaviour
+        {
+            private ManualLogSource _logger { get; set; } = null;
 
-    public void Register(string assetName, Data data, List<System.Type> components=null)
+            private void Awake()
+            {
+                _logger = ModEntry.Logger;
+                _logger.LogInfo("Spawned " + gameObject.name + " into the world!");
+            }
+        }
+
+    public void Register(string assetName, Data data, List<System.Type> components = null)
     {
         GameObject go = _assetBundle.LoadAsset<GameObject>(assetName);
 
@@ -66,11 +75,13 @@ class ModValuableRegistry
             go.AddComponent(typeof(Rigidbody));
             go.AddComponent(typeof(PhysGrabObjectImpactDetector));
             go.AddComponent(typeof(PhotonView));
+            go.AddComponent(typeof(ModValuableDefaultBehaviour));
 
             if (!go.GetComponent<Collider>())
             {
                 _logger.LogWarning(data.Name + " does not have a collider! Adding a BoxCollider!");
-                go.AddComponent(typeof(BoxCollider));
+                BoxCollider bc = go.AddComponent(typeof(BoxCollider)) as BoxCollider;
+                bc.size /= 2;
             }
 
             go.AddComponent(typeof(BoxCollider));
