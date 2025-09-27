@@ -97,9 +97,10 @@ class ModValuableRegistry
 
             go.tag = "Phys Grab Object";
             go.name = data.Name;
-            go.layer = LayerMask.NameToLayer("PhysGrabObject");
 
-            _logger.LogInfo("Colider layer name " + go.layer);
+            // Put the game object on the PhysGrabObject layer.
+            // Many raycasts will not happen if the layer is not correct.
+            go.layer = LayerMask.NameToLayer("PhysGrabObject");
 
             if (components != null)
             {
