@@ -44,10 +44,10 @@
 
   <Target Name="PostBuild" AfterTargets="Build">
     <RemoveDir Directories="$(ModFolderPath)"/>
-    <Exec Command="cp -r $(ModFolderName) $(REPOPluginFolderPath)"/>
+    <Exec Command="xcopy /E /I &quot;./$(ModFolderName)&quot; &quot;$(ModFolderPath)&quot;" Condition="'$(OS)' == 'Windows_NT'"/>
+    <Exec Command="cp -r ./$(ModFolderName) $(REPOPluginFolderPath)" Condition="'$(OS)' == 'Unix'"/>
     <Copy SourceFiles="./$(OutputPath)/$(AssemblyName).dll" DestinationFolder="$(ModFolderPath)"/>
     <Message Text="Copied mod files to $(REPOPluginFolderPath)" Importance="high"/>
-
   </Target>
 
   <Target Name="PostClean" AfterTargets="Clean">
