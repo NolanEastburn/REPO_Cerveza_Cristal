@@ -81,10 +81,8 @@ class ModValuableRegistry
             {
                 _logger.LogWarning(data.Name + " does not have a collider! Adding a BoxCollider!");
                 BoxCollider bc = go.AddComponent(typeof(BoxCollider)) as BoxCollider;
-                bc.size /= 2;
             }
 
-            go.AddComponent(typeof(BoxCollider));
             go.AddComponent(typeof(PhysGrabObjectCollider));
 
             ValuableObject v = go.AddComponent(typeof(ValuableObject)) as ValuableObject;
@@ -99,6 +97,9 @@ class ModValuableRegistry
 
             go.tag = "Phys Grab Object";
             go.name = data.Name;
+            go.layer = LayerMask.NameToLayer("PhysGrabObject");
+
+            _logger.LogInfo("Colider layer name " + go.layer);
 
             if (components != null)
             {
