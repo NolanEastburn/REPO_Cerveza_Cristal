@@ -25,10 +25,10 @@
     <PackageReference Include="BepInEx.Core" Version="5.*" />
     <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
     <PackageReference Include="UnityEngine.Modules" Version="2022.3.21" IncludeAssets="compile" />
-    <Reference Include="$(REPODLLName)">
+    <Reference Include="$(REPODLLName).dll">
       <HintPath>$(REPODLLPath)</HintPath>
     </Reference>
-    <Reference Include="$(PUNDLLName)">
+    <Reference Include="$(PUNDLLName).dll">
       <HintPath>$(PUNDLLPath)</HintPath>
     </Reference>
     <Compile Remove="$(DecompFolder)/**"/>
