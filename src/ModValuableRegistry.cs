@@ -25,20 +25,29 @@ public class ModValuableRegistry : IModRegistry
     public struct Data
     {
         private static readonly (float, float) DEFAULT_VALUE = (100f, 1000f);
+
+        private const float DEFAULT_DURABILITY = 100.0f;
+        private const float DEFAULT_FRAGILITY = 100.0f;
+
         private const float DEFAULT_MASS = 1.0f;
 
         private static readonly ValuableVolume.Type DEFAULT_VALUABLE_VOLUME_TYPE = ValuableVolume.Type.Medium;
 
         public string Name { get; set; }
         public (float, float) Value { get; set; }
+        public float Durability { get; set; }
+        public float Fragility { get; set; }
         public float Mass { get; set; }
         public ValuableVolume.Type ValuableVolumeType { get; set; }
         public Gradient ParticleGradient { get; set; }
 
-        public Data(string name, (float, float)? value = null, float mass = DEFAULT_MASS, ValuableVolume.Type? valuableVolumeType = null, Gradient particleGraident = null)
+        public Data(string name, (float, float)? value = null, float mass = DEFAULT_MASS,
+         ValuableVolume.Type? valuableVolumeType = null, Gradient particleGraident = null, float durability = DEFAULT_DURABILITY, float fragility = DEFAULT_FRAGILITY)
         {
             Name = name;
             Value = value ?? DEFAULT_VALUE;
+            Durability = durability;
+            Fragility = fragility;
             Mass = mass;
             ValuableVolumeType = valuableVolumeType ?? DEFAULT_VALUABLE_VOLUME_TYPE;
 
@@ -104,6 +113,10 @@ public class ModValuableRegistry : IModRegistry
             v.valuePreset = ScriptableObject.CreateInstance(typeof(Value)) as Value;
             v.valuePreset.valueMin = addition.ValuableData.Value.Item1;
             v.valuePreset.valueMax = addition.ValuableData.Value.Item2;
+
+            v.durabilityPreset = ScriptableObject.CreateInstance(typeof(Durability)) as Durability;
+            v.durabilityPreset.durability = addition.ValuableData.Durability;
+            v.durabilityPreset.fragility = addition.ValuableData.Fragility;
 
             v.physAttributePreset = ScriptableObject.CreateInstance(typeof(PhysAttribute)) as PhysAttribute;
             v.physAttributePreset.mass = addition.ValuableData.Mass;
