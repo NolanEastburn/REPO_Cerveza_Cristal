@@ -3,6 +3,7 @@ using BepInEx;
 using BepInEx.Logging;
 using UnityEngine;
 using Photon.Pun;
+using System.Collections.Generic;
 
 namespace Cerveza_Cristal;
 
@@ -16,7 +17,7 @@ public class ModEntry : BaseUnityPlugin
 
     private bool assetBundlesLoaded = false;
 
-    private bool valueableAdded = false;
+    private bool additionsRegistered = false;
 
     private bool _failedToLoadAssetBundle = false;
 
@@ -25,6 +26,8 @@ public class ModEntry : BaseUnityPlugin
     private static string assetBundlePath = Path.Combine(pluginRoot, MOD_CONTENT_FOLDER, RESOURCES_FOLDER, "AssetBundles", "primaryassetbundle");
 
     private static ModValuableRegistry _modValuableRegistry { get; set; }
+
+    private static List<IModRegistry> _modRegistries { get; set; } = new List<IModRegistry>();
 
     private void Awake()
     {
@@ -50,58 +53,29 @@ public class ModEntry : BaseUnityPlugin
             // Create the valuables registry
             _modValuableRegistry = new ModValuableRegistry(assetBundle, Logger);
 
-            _modValuableRegistry.Register("Cone", new ModValuableRegistry.Data(name: "Test Valuable"));
+            // Register each valuable
+            foreach (ModValuableRegistry.ValuableAddition addition in ModValuables.ValuableAdditions)
+            {
+                _modValuableRegistry.Register(addition);
+            }
+
+            // Add the ValuableRegistry to the list of registries.
+            _modRegistries.Add(_modValuableRegistry);
 
             assetBundlesLoaded = true;
         }
 
-        if (assetBundlesLoaded && !valueableAdded && !_failedToLoadAssetBundle)
+        if (assetBundlesLoaded && !additionsRegistered && !_failedToLoadAssetBundle)
         {
             if (RunManager.instance != null)
             {
-
-                foreach (Level level in RunManager.instance.levels)
+                foreach(IModRegistry registry in _modRegistries)
                 {
-                    foreach (LevelValuables lv in level.ValuablePresets)
-                    {
-                        foreach ((GameObject, ModValuableRegistry.Data) regEntry in _modValuableRegistry.Registry.Values)
-                        {
-                            switch (regEntry.Item2.ValuableVolumeType)
-                            {
-
-                                case ValuableVolume.Type.Tiny:
-                                    lv.tiny.Add(regEntry.Item1);
-                                    break;
-
-                                case ValuableVolume.Type.Small:
-                                    lv.small.Add(regEntry.Item1);
-                                    break;
-
-                                case ValuableVolume.Type.Medium:
-                                    lv.medium.Add(regEntry.Item1);
-                                    break;
-
-                                case ValuableVolume.Type.Big:
-                                    lv.big.Add(regEntry.Item1);
-                                    break;
-
-                                case ValuableVolume.Type.Wide:
-                                    lv.wide.Add(regEntry.Item1);
-                                    break;
-
-                                case ValuableVolume.Type.Tall:
-                                    lv.tall.Add(regEntry.Item1);
-                                    break;
-
-                                case ValuableVolume.Type.VeryTall:
-                                    lv.veryTall.Add(regEntry.Item1);
-                                    break;
-                            }
-                        }
-                    }
+                    registry.ApplyAdditionRegistrations(RunManager.instance);
                 }
 
-                valueableAdded = true;
+
+                additionsRegistered = true;
             }
 
             PhotonNetwork.PrefabPool = new ModPrefabPool(_modValuableRegistry, Logger);

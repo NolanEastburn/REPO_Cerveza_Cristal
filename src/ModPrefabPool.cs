@@ -5,7 +5,7 @@ using BepInEx.Logging;
 
 namespace Cerveza_Cristal;
 
-class ModPrefabPool : IPunPrefabPool
+public class ModPrefabPool : IPunPrefabPool
 {
     private IPunPrefabPool _defaultPool { set; get; } = null;
 
