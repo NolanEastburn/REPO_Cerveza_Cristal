@@ -1,9 +1,9 @@
-﻿using System.IO;
+﻿using System.Collections.Generic;
+using System.IO;
 using BepInEx;
 using BepInEx.Logging;
-using UnityEngine;
 using Photon.Pun;
-using System.Collections.Generic;
+using UnityEngine;
 
 namespace Cerveza_Cristal;
 
@@ -69,7 +69,7 @@ public class ModEntry : BaseUnityPlugin
         {
             if (RunManager.instance != null)
             {
-                foreach(IModRegistry registry in _modRegistries)
+                foreach (IModRegistry registry in _modRegistries)
                 {
                     registry.ApplyAdditionRegistrations(RunManager.instance);
                 }
