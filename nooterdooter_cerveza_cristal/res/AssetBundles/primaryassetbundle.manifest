@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 1634349906
+CRC: 1669868392
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 991c3df75d4cf86aee3ff44ab357cfbc
+    Hash: 4c180e8b4dc2955a5dfe252a1b998879
   TypeTreeHash:
     serializedVersion: 2
     Hash: 0b57f674c07541440b80062ddecc5d89
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 991c3df75d4cf86aee3ff44ab357cfbc
+    Hash: 4c180e8b4dc2955a5dfe252a1b998879
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -32,7 +32,6 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/CervezaCristal_FBX.fbx
 - Assets/Cone.prefab
-- Assets/CervezaCristal.prefab
+- Assets/bottle_prefab.prefab
 Dependencies: []

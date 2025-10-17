@@ -8,7 +8,7 @@ public static class ModValuables
     ));
 
     public static readonly ModValuableRegistry.ValuableAddition BOTTLE =
-    new ModValuableRegistry.ValuableAddition(assetName: "CervezaCristal", valuableData: new ModValuableRegistry.Data
+    new ModValuableRegistry.ValuableAddition(assetName: "bottle_prefab", valuableData: new ModValuableRegistry.Data
     (
         name: "Cerveza Cristal Bottle",
         value: (1000, 3000),
