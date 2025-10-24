@@ -1,7 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.IO;
+using System.Xml.Serialization;
 using BepInEx;
 using BepInEx.Logging;
+using HarmonyLib;
+using HarmonyLib.Tools;
 using Photon.Pun;
 using UnityEngine;
 
@@ -29,8 +32,22 @@ public class ModEntry : BaseUnityPlugin
 
     private static List<IModRegistry> _modRegistries { get; set; } = new List<IModRegistry>();
 
+    [HarmonyPatch(typeof(ValuableDirector), nameof(ValuableDirector.SetupHost))]
+    class TestPatch
+    {
+        static void Prefix()
+        {
+            Logger.LogInfo("Foobert doobert do");
+        }
+    }
+
     private void Awake()
     {
+        // Harmony test
+        HarmonyFileLog.Enabled = true;
+        Harmony harmony = new Harmony("com.nooterdooter.cerveza_cristal");
+        harmony.PatchAll();
+
         // Plugin startup logic
         Logger = base.Logger;
         Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
