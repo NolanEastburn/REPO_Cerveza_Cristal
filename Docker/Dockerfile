@@ -20,12 +20,17 @@ ENV PATH="/home/nooterdooter/.dotnet/tools:${PATH}"
 RUN mkdir ${HOME_DIR}
 COPY steamcmd_install.exp ${HOME_DIR}/steamcmd_install.exp
 COPY steamcmd_install.sh ${HOME_DIR}/steamcmd_install.sh
-RUN chmod a+x ${HOME_DIR}/steamcmd_install.sh ${HOME_DIR}/steamcmd_install.exp
+COPY startup.sh ${HOME_DIR}/startup.sh
+RUN chmod a+x ${HOME_DIR}/steamcmd_install.sh ${HOME_DIR}/steamcmd_install.exp ${HOME_DIR}/startup.sh
+
 RUN <<STEAM_CMD_INSTALL
     dpkg --add-architecture i386
     apt-get update
     expect ${HOME_DIR}/steamcmd_install.exp
 STEAM_CMD_INSTALL
+
+ADD --keep-git-dir=true git@github.com:NolanEastburn/REPO_Cerveza_Cristal.git ${HOME_DIR}/REPO_Cerveza_Cristal
+
 ENV PATH="/usr/games:${PATH}"
 RUN groupadd nooterdooter
 RUN useradd -s /bin/bash -g nooterdooter nooterdooter
@@ -34,4 +39,4 @@ RUN chown nooterdooter ${HOME_DIR}/ -R
 WORKDIR ${HOME_DIR}/
 USER nooterdooter
 RUN dotnet tool install ilspycmd --global
-ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["/home/nooterdooter/startup.sh"]
