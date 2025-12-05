@@ -12,15 +12,14 @@
       https://nuget.samboy.dev/v3/index.json
     </RestoreAdditionalProjectSources>
     <RootNamespace>Cerveza_Cristal</RootNamespace>
-    <GameRoot>$(REPO_STEAM)/steamapps/common/REPO</GameRoot>
+    <GameRoot>$(HOME)/.steam/steam/steamapps/common/REPO</GameRoot>
     <DecompFolder>./REPO_Decomp</DecompFolder>
     <REPODLLName>Assembly-CSharp</REPODLLName>
     <REPODLLPath>$(GameRoot)/REPO_Data/Managed/$(REPODLLName).dll</REPODLLPath>
     <PUNDLLName>PhotonUnityNetworking</PUNDLLName>
     <PUNDLLPath>$(GameRoot)/REPO_Data/Managed/$(PUNDLLName).dll</PUNDLLPath>
     <ModFolderName>nooterdooter_cerveza_cristal</ModFolderName>
-    <REPOPluginFolderPath>$(GameRoot)/BepInEx/plugins/</REPOPluginFolderPath>
-    <ModFolderPath>$(REPOPluginFolderPath)/$(ModFolderName)</ModFolderPath>
+    <ModFolderPath>./build_output</ModFolderPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -44,10 +43,9 @@
 
   <Target Name="PostBuild" AfterTargets="Build">
     <RemoveDir Directories="$(ModFolderPath)"/>
-    <Exec Command="xcopy /E /I &quot;./$(ModFolderName)&quot; &quot;$(ModFolderPath)&quot;" Condition="'$(OS)' == 'Windows_NT'"/>
-    <Exec Command="cp -r ./$(ModFolderName) $(REPOPluginFolderPath)" Condition="'$(OS)' == 'Unix'"/>
+    <Exec Command="cp -r ./$(ModFolderName) $(ModFolderPath)"/>
     <Copy SourceFiles="./$(OutputPath)/$(AssemblyName).dll" DestinationFolder="$(ModFolderPath)"/>
-    <Message Text="Copied mod files to $(REPOPluginFolderPath)" Importance="high"/>
+    <Message Text="Copied mod files to $(ModFolderPath)" Importance="high"/>
   </Target>
 
   <Target Name="PostClean" AfterTargets="Clean">
