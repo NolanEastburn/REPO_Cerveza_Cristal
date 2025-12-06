@@ -9,3 +9,7 @@ obj/**
 # Ignore decompilation artifacts, for reference only
 REPO_Decomp
 REPO_Decomp/** */
+
+# Ignore build outputs
+build_output
+build_output/** */

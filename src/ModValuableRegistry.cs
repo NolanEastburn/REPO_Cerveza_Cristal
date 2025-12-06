@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Reflection;
 using BepInEx.Logging;
 using Photon.Pun;
 using UnityEngine;
@@ -162,35 +164,50 @@ public class ModValuableRegistry : IModRegistry
             {
                 foreach ((GameObject, ModValuableRegistry.Data) regEntry in Registry.Values)
                 {
+                    // Used for the singeplayer pool.
+                    PrefabRef prefabRef = new PrefabRef();
+                    prefabRef.SetPrefab(regEntry.Item1, _assetBundle.name + "." + regEntry.Item2.Name);
+
+                    // Register it in the singleplayer pool
+                    object rmInstance = Activator.CreateInstance(typeof(RunManager));
+                    FieldInfo field = rmInstance.GetType().GetField("singleplayerPool", BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
+                    Dictionary<string, GameObject> foo = (Dictionary<string, GameObject>)field.GetValue(rmInstance);
+                    foo.Add(prefabRef.ResourcePath, regEntry.Item1);
+
+                    foreach (string key in foo.Keys)
+                    {
+                        _logger.LogInfo("Key: " + key);
+                    }
+
                     switch (regEntry.Item2.ValuableVolumeType)
                     {
 
                         case ValuableVolume.Type.Tiny:
-                            lv.tiny.Add(regEntry.Item1);
+                            lv.tiny.Add(prefabRef);
                             break;
 
                         case ValuableVolume.Type.Small:
-                            lv.small.Add(regEntry.Item1);
+                            lv.small.Add(prefabRef);
                             break;
 
                         case ValuableVolume.Type.Medium:
-                            lv.medium.Add(regEntry.Item1);
+                            lv.medium.Add(prefabRef);
                             break;
 
                         case ValuableVolume.Type.Big:
-                            lv.big.Add(regEntry.Item1);
+                            lv.big.Add(prefabRef);
                             break;
 
                         case ValuableVolume.Type.Wide:
-                            lv.wide.Add(regEntry.Item1);
+                            lv.wide.Add(prefabRef);
                             break;
 
                         case ValuableVolume.Type.Tall:
-                            lv.tall.Add(regEntry.Item1);
+                            lv.tall.Add(prefabRef);
                             break;
 
                         case ValuableVolume.Type.VeryTall:
-                            lv.veryTall.Add(regEntry.Item1);
+                            lv.veryTall.Add(prefabRef);
                             break;
                     }
                 }

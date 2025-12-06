@@ -19,7 +19,7 @@
     <PUNDLLName>PhotonUnityNetworking</PUNDLLName>
     <PUNDLLPath>$(GameRoot)/REPO_Data/Managed/$(PUNDLLName).dll</PUNDLLPath>
     <ModFolderName>nooterdooter_cerveza_cristal</ModFolderName>
-    <ModFolderPath>./build_output</ModFolderPath>
+    <ModFolderPath>./build_output/$(ModFolderName)</ModFolderPath>
   </PropertyGroup>
 
   <ItemGroup>
