@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Reflection;
 using BepInEx.Logging;
 using Photon.Pun;
 using UnityEngine;
@@ -165,19 +164,7 @@ public class ModValuableRegistry : IModRegistry
                 foreach ((GameObject, ModValuableRegistry.Data) regEntry in Registry.Values)
                 {
                     // Used for the singeplayer pool.
-                    PrefabRef prefabRef = new PrefabRef();
-                    prefabRef.SetPrefab(regEntry.Item1, _assetBundle.name + "." + regEntry.Item2.Name);
-
-                    // Register it in the singleplayer pool
-                    object rmInstance = Activator.CreateInstance(typeof(RunManager));
-                    FieldInfo field = rmInstance.GetType().GetField("singleplayerPool", BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
-                    Dictionary<string, GameObject> foo = (Dictionary<string, GameObject>)field.GetValue(rmInstance);
-                    foo.Add(prefabRef.ResourcePath, regEntry.Item1);
-
-                    foreach (string key in foo.Keys)
-                    {
-                        _logger.LogInfo("Key: " + key);
-                    }
+                    PrefabRef prefabRef = CreatePrefabRef(regEntry);
 
                     switch (regEntry.Item2.ValuableVolumeType)
                     {
@@ -213,5 +200,17 @@ public class ModValuableRegistry : IModRegistry
                 }
             }
         }
+    }
+
+    public string GetResourcePath((GameObject, ModValuableRegistry.Data) regEntry)
+    {
+        return _assetBundle.name + "." + regEntry.Item2.Name;
+    }
+
+    public PrefabRef CreatePrefabRef((GameObject, ModValuableRegistry.Data) regEntry)
+    {
+        PrefabRef prefabRef = new PrefabRef();
+        prefabRef.SetPrefab(regEntry.Item1, GetResourcePath(regEntry));
+        return prefabRef;
     }
 }

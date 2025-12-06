@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Reflection;
 using System.Xml.Serialization;
 using BepInEx;
 using BepInEx.Logging;
@@ -44,18 +46,31 @@ public class ModEntry : BaseUnityPlugin
     [HarmonyPatch(typeof(LevelGenerator), "Start")]
     class ModAssetRestorePatch
     {
-        static void Postfix(LevelGenerator __instance)
+        static void Postfix()
         {
-            Logger.LogInfo("GOOBER: " + __instance.name);
+            Dictionary<string, GameObject> singleplayerPool = GetSingleplayerPool();
+
+            if (singleplayerPool != null)
+            {
+                foreach ((GameObject, ModValuableRegistry.Data) regEntry in _modValuableRegistry.Registry.Values)
+                {
+                    singleplayerPool.Add(_modValuableRegistry.GetResourcePath(regEntry), regEntry.Item1);
+                }
+            }
         }
+    }
+
+    private static Dictionary<string, GameObject> GetSingleplayerPool()
+    {
+        // Register it in the singleplayer pool
+        RunManager rmInstance = RunManager.instance;
+        FieldInfo field = rmInstance.GetType().GetField("singleplayerPool", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.GetField);
+        Dictionary<string, GameObject> pool = (Dictionary<string, GameObject>)field.GetValue(rmInstance);
+        return pool;
     }
 
     private void Awake()
     {
-        // Harmony test
-        HarmonyFileLog.Enabled = true;
-        Harmony harmony = new Harmony("com.nooterdooter.cerveza_cristal");
-        harmony.PatchAll();
 
         // Plugin startup logic
         Logger = base.Logger;
@@ -95,6 +110,11 @@ public class ModEntry : BaseUnityPlugin
         {
             if (RunManager.instance != null)
             {
+                // Harmony test
+                HarmonyFileLog.Enabled = true;
+                Harmony harmony = new Harmony("com.nooterdooter.cerveza_cristal");
+                harmony.PatchAll();
+
                 foreach (IModRegistry registry in _modRegistries)
                 {
                     registry.ApplyAdditionRegistrations(RunManager.instance);
