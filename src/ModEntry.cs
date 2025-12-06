@@ -41,6 +41,15 @@ public class ModEntry : BaseUnityPlugin
         }
     }
 
+    [HarmonyPatch(typeof(LevelGenerator), "Start")]
+    class ModAssetRestorePatch
+    {
+        static void Postfix(LevelGenerator __instance)
+        {
+            Logger.LogInfo("GOOBER: " + __instance.name);
+        }
+    }
+
     private void Awake()
     {
         // Harmony test

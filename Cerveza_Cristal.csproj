@@ -19,7 +19,7 @@
     <PUNDLLName>PhotonUnityNetworking</PUNDLLName>
     <PUNDLLPath>$(GameRoot)/REPO_Data/Managed/$(PUNDLLName).dll</PUNDLLPath>
     <ModFolderName>nooterdooter_cerveza_cristal</ModFolderName>
-    <ModFolderPath>./build_output/$(ModFolderName)</ModFolderPath>
+    <ModFolderPath>./build_output</ModFolderPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -43,8 +43,9 @@
 
   <Target Name="PostBuild" AfterTargets="Build">
     <RemoveDir Directories="$(ModFolderPath)"/>
-    <Exec Command="cp -r ./$(ModFolderName) $(ModFolderPath)"/>
-    <Copy SourceFiles="./$(OutputPath)/$(AssemblyName).dll" DestinationFolder="$(ModFolderPath)"/>
+    <MakeDir Directories="$(ModFolderPath)"/>
+    <Exec Command="cp ./$(ModFolderName) $(ModFolderPath)/$(ModFolderName) -r"/>
+    <Copy SourceFiles="./$(OutputPath)/$(AssemblyName).dll" DestinationFolder="$(ModFolderPath)/$(ModFolderName)"/>
     <Message Text="Copied mod files to $(ModFolderPath)" Importance="high"/>
   </Target>
 
