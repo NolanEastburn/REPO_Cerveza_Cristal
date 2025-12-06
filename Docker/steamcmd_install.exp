@@ -1,0 +1,7 @@
+#!/usr/bin/expect
+
+set timeout 120
+spawn /home/nooterdooter/steamcmd_install.sh
+expect "Do you agree to all terms of the Steam License Agreement? "
+send "2\r"
+expect "STEAMCMD INSTALL FINISHED!!!"
