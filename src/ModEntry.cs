@@ -34,6 +34,8 @@ public class ModEntry : BaseUnityPlugin
 
     private static List<IModRegistry> _modRegistries { get; set; } = new List<IModRegistry>();
 
+    private static IPunPrefabPool _multiplayerPool { get; set; } = null;
+
     [HarmonyPatch(typeof(ValuableDirector), nameof(ValuableDirector.SetupHost))]
     class TestPatch
     {
@@ -54,9 +56,12 @@ public class ModEntry : BaseUnityPlugin
             {
                 foreach ((GameObject, ModValuableRegistry.Data) regEntry in _modValuableRegistry.Registry.Values)
                 {
-                    singleplayerPool.Add(_modValuableRegistry.GetResourcePath(regEntry), regEntry.Item1);
+                    singleplayerPool.Add(_modValuableRegistry.GetRegistryName(regEntry.Item2), regEntry.Item1);
                 }
             }
+
+            // Reset the multiplayer pool.
+            PhotonNetwork.PrefabPool = _multiplayerPool;
         }
     }
 
@@ -124,7 +129,7 @@ public class ModEntry : BaseUnityPlugin
                 additionsRegistered = true;
             }
 
-            PhotonNetwork.PrefabPool = new ModPrefabPool(_modValuableRegistry, Logger);
+            _multiplayerPool = new ModPrefabPool(_modValuableRegistry, Logger);
 
             gameObject.SetActive(false);
         }

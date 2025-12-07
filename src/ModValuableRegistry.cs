@@ -139,7 +139,7 @@ public class ModValuableRegistry : IModRegistry
                 }
             }
 
-            Registry.Add(addition.ValuableData.Name, (go, addition.ValuableData));
+            Registry.Add(GetRegistryName(addition.ValuableData), (go, addition.ValuableData));
         }
         else
         {
@@ -163,7 +163,6 @@ public class ModValuableRegistry : IModRegistry
             {
                 foreach ((GameObject, ModValuableRegistry.Data) regEntry in Registry.Values)
                 {
-                    // Used for the singeplayer pool.
                     PrefabRef prefabRef = CreatePrefabRef(regEntry);
 
                     switch (regEntry.Item2.ValuableVolumeType)
@@ -202,15 +201,15 @@ public class ModValuableRegistry : IModRegistry
         }
     }
 
-    public string GetResourcePath((GameObject, ModValuableRegistry.Data) regEntry)
+    public string GetRegistryName(ModValuableRegistry.Data data)
     {
-        return _assetBundle.name + "." + regEntry.Item2.Name;
+        return _assetBundle.name + "." + data.Name;
     }
 
     public PrefabRef CreatePrefabRef((GameObject, ModValuableRegistry.Data) regEntry)
     {
         PrefabRef prefabRef = new PrefabRef();
-        prefabRef.SetPrefab(regEntry.Item1, GetResourcePath(regEntry));
+        prefabRef.SetPrefab(regEntry.Item1, GetRegistryName(regEntry.Item2));
         return prefabRef;
     }
 }
