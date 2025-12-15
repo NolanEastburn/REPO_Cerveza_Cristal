@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using BepInEx.Logging;
 using Photon.Pun;
@@ -138,7 +139,7 @@ public class ModValuableRegistry : IModRegistry
                 }
             }
 
-            Registry.Add(addition.ValuableData.Name, (go, addition.ValuableData));
+            Registry.Add(GetRegistryName(addition.ValuableData), (go, addition.ValuableData));
         }
         else
         {
@@ -162,39 +163,53 @@ public class ModValuableRegistry : IModRegistry
             {
                 foreach ((GameObject, ModValuableRegistry.Data) regEntry in Registry.Values)
                 {
+                    PrefabRef prefabRef = CreatePrefabRef(regEntry);
+
                     switch (regEntry.Item2.ValuableVolumeType)
                     {
 
                         case ValuableVolume.Type.Tiny:
-                            lv.tiny.Add(regEntry.Item1);
+                            lv.tiny.Add(prefabRef);
                             break;
 
                         case ValuableVolume.Type.Small:
-                            lv.small.Add(regEntry.Item1);
+                            lv.small.Add(prefabRef);
                             break;
 
                         case ValuableVolume.Type.Medium:
-                            lv.medium.Add(regEntry.Item1);
+                            lv.medium.Add(prefabRef);
                             break;
 
                         case ValuableVolume.Type.Big:
-                            lv.big.Add(regEntry.Item1);
+                            lv.big.Add(prefabRef);
                             break;
 
                         case ValuableVolume.Type.Wide:
-                            lv.wide.Add(regEntry.Item1);
+                            lv.wide.Add(prefabRef);
                             break;
 
                         case ValuableVolume.Type.Tall:
-                            lv.tall.Add(regEntry.Item1);
+                            lv.tall.Add(prefabRef);
                             break;
 
                         case ValuableVolume.Type.VeryTall:
-                            lv.veryTall.Add(regEntry.Item1);
+                            lv.veryTall.Add(prefabRef);
                             break;
                     }
                 }
             }
         }
+    }
+
+    public string GetRegistryName(ModValuableRegistry.Data data)
+    {
+        return _assetBundle.name + "." + data.Name;
+    }
+
+    public PrefabRef CreatePrefabRef((GameObject, ModValuableRegistry.Data) regEntry)
+    {
+        PrefabRef prefabRef = new PrefabRef();
+        prefabRef.SetPrefab(regEntry.Item1, GetRegistryName(regEntry.Item2));
+        return prefabRef;
     }
 }

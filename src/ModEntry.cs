@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Reflection;
 using System.Xml.Serialization;
 using BepInEx;
 using BepInEx.Logging;
@@ -32,6 +34,8 @@ public class ModEntry : BaseUnityPlugin
 
     private static List<IModRegistry> _modRegistries { get; set; } = new List<IModRegistry>();
 
+    private static IPunPrefabPool _multiplayerPool { get; set; } = null;
+
     [HarmonyPatch(typeof(ValuableDirector), nameof(ValuableDirector.SetupHost))]
     class TestPatch
     {
@@ -41,12 +45,37 @@ public class ModEntry : BaseUnityPlugin
         }
     }
 
+    [HarmonyPatch(typeof(LevelGenerator), "Start")]
+    class ModAssetRestorePatch
+    {
+        static void Postfix()
+        {
+            Dictionary<string, GameObject> singleplayerPool = GetSingleplayerPool();
+
+            if (singleplayerPool != null)
+            {
+                foreach ((GameObject, ModValuableRegistry.Data) regEntry in _modValuableRegistry.Registry.Values)
+                {
+                    singleplayerPool.Add(_modValuableRegistry.GetRegistryName(regEntry.Item2), regEntry.Item1);
+                }
+            }
+
+            // Reset the multiplayer pool.
+            PhotonNetwork.PrefabPool = _multiplayerPool;
+        }
+    }
+
+    private static Dictionary<string, GameObject> GetSingleplayerPool()
+    {
+        // Register it in the singleplayer pool
+        RunManager rmInstance = RunManager.instance;
+        FieldInfo field = rmInstance.GetType().GetField("singleplayerPool", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.GetField);
+        Dictionary<string, GameObject> pool = (Dictionary<string, GameObject>)field.GetValue(rmInstance);
+        return pool;
+    }
+
     private void Awake()
     {
-        // Harmony test
-        HarmonyFileLog.Enabled = true;
-        Harmony harmony = new Harmony("com.nooterdooter.cerveza_cristal");
-        harmony.PatchAll();
 
         // Plugin startup logic
         Logger = base.Logger;
@@ -86,6 +115,11 @@ public class ModEntry : BaseUnityPlugin
         {
             if (RunManager.instance != null)
             {
+                // Harmony test
+                HarmonyFileLog.Enabled = true;
+                Harmony harmony = new Harmony("com.nooterdooter.cerveza_cristal");
+                harmony.PatchAll();
+
                 foreach (IModRegistry registry in _modRegistries)
                 {
                     registry.ApplyAdditionRegistrations(RunManager.instance);
@@ -95,7 +129,7 @@ public class ModEntry : BaseUnityPlugin
                 additionsRegistered = true;
             }
 
-            PhotonNetwork.PrefabPool = new ModPrefabPool(_modValuableRegistry, Logger);
+            _multiplayerPool = new ModPrefabPool(_modValuableRegistry, Logger);
 
             gameObject.SetActive(false);
         }
