@@ -1,6 +1,8 @@
 FROM ubuntu:latest
 
-ARG HOME_DIR=/home/nooterdooter
+ARG GROUP_USER=nooterdooter
+ARG GUI_UID=1006
+ARG HOME_DIR=/home/${GROUP_USER}
 ARG APPS="expect curl wget git nano"
 
 RUN apt-get update && apt-get upgrade -y
@@ -15,7 +17,7 @@ apt-get install dotnet-sdk-8.0 -y
 apt-get install dotnet-sdk-9.0 -y
 DOTNET_INSTALL
 
-ENV PATH="/home/nooterdooter/.dotnet/tools:${PATH}"
+ENV PATH="${HOME_DIR}/.dotnet/tools:${PATH}"
 
 RUN mkdir ${HOME_DIR}
 COPY steamcmd_install.exp ${HOME_DIR}/steamcmd_install.exp
@@ -30,15 +32,16 @@ RUN <<STEAM_CMD_INSTALL
     expect ${HOME_DIR}/steamcmd_install.exp
 STEAM_CMD_INSTALL
 
-ADD --keep-git-dir=true git@github.com:NolanEastburn/REPO_Cerveza_Cristal.git ${HOME_DIR}/REPO_Cerveza_Cristal
+RUN mkdir -p -m 0700 /root/.ssh && ssh-keyscan -t rsa github.com >> /root/.ssh/known_hosts
+RUN --mount=type=ssh git clone git@github.com:NolanEastburn/REPO_Cerveza_Cristal.git ${HOME_DIR}/REPO_Cerveza_Cristal
 
 ENV PATH="/usr/games:${PATH}"
 
-RUN groupadd nooterdooter
-RUN useradd -s /bin/bash -g nooterdooter nooterdooter
-RUN chgrp nooterdooter ${HOME_DIR}/ -R
-RUN chown nooterdooter ${HOME_DIR}/ -R
+RUN groupadd -g ${GUI_UID} ${GROUP_USER}
+RUN useradd -s /bin/bash -g ${GROUP_USER} -u ${GUI_UID} ${GROUP_USER}
+RUN chgrp ${GROUP_USER} ${HOME_DIR}/ -R
+RUN chown ${GROUP_USER} ${HOME_DIR}/ -R
 WORKDIR ${HOME_DIR}/
-USER nooterdooter
+USER ${GROUP_USER}
 RUN dotnet tool install ilspycmd --global
 ENTRYPOINT ["/home/nooterdooter/startup.sh"]
