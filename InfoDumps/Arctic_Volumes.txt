@@ -1,0 +1,2716 @@
+Child Components of Tiny volumes
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Tiny Switch
+Component Type: ValuablePropSwitch | Name: Tiny Switch
+Component Type: UnityEngine.Transform | Name: Bookshelf - Full 01 (1)
+Component Type: UnityEngine.MeshFilter | Name: Bookshelf - Full 01 (1)
+Component Type: UnityEngine.MeshRenderer | Name: Bookshelf - Full 01 (1)
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Bookshelf - Full 01 (1)
+Component Type: UnityEngine.Transform | Name: Props
+Component Type: UnityEngine.Transform | Name: ---- Props ------------
+Component Type: UnityEngine.Transform | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Module | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Valuables
+Component Type: UnityEngine.Transform | Name: Kitchen Fridge
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Kitchen Fridge
+Component Type: UnityEngine.Transform | Name: Props
+Component Type: UnityEngine.Transform | Name: ---- Props ------------
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Module | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Tiny Switch (1)
+Component Type: ValuablePropSwitch | Name: Tiny Switch (1)
+Component Type: UnityEngine.Transform | Name: Bookshelf - Full 02
+Component Type: UnityEngine.MeshFilter | Name: Bookshelf - Full 02
+Component Type: UnityEngine.MeshRenderer | Name: Bookshelf - Full 02
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Bookshelf - Full 02
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Small (6)
+Component Type: ValuablePropSwitch | Name: Small (6)
+Component Type: UnityEngine.Transform | Name: Valuable Switch
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Gym Locker
+Component Type: UnityEngine.MeshFilter | Name: Gym Locker
+Component Type: UnityEngine.MeshRenderer | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Gym Locker
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Small (5)
+Component Type: ValuablePropSwitch | Name: Small (5)
+Component Type: UnityEngine.Transform | Name: Valuable Switch
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Bookshelf - Full 01
+Component Type: UnityEngine.MeshFilter | Name: Bookshelf - Full 01
+Component Type: UnityEngine.MeshRenderer | Name: Bookshelf - Full 01
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Bookshelf - Full 01
+Component Type: UnityEngine.Transform | Name: Props
+Component Type: UnityEngine.Transform | Name: ---- Props ------------
+Component Type: UnityEngine.Transform | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Module | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Tiny Switch
+Component Type: ValuablePropSwitch | Name: Tiny Switch
+Component Type: UnityEngine.Transform | Name: Bookshelf - Full 01
+Component Type: UnityEngine.MeshFilter | Name: Bookshelf - Full 01
+Component Type: UnityEngine.MeshRenderer | Name: Bookshelf - Full 01
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Bookshelf - Full 01
+Component Type: UnityEngine.Transform | Name: Props
+Component Type: UnityEngine.Transform | Name: ---- Props ------------
+Component Type: UnityEngine.Transform | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Module | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Bookshelf - Full 01 (1)
+Component Type: UnityEngine.MeshFilter | Name: Bookshelf - Full 01 (1)
+Component Type: UnityEngine.MeshRenderer | Name: Bookshelf - Full 01 (1)
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Bookshelf - Full 01 (1)
+Component Type: UnityEngine.Transform | Name: Props
+Component Type: UnityEngine.Transform | Name: ---- Props ------------
+Component Type: UnityEngine.Transform | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Module | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Tiny Switch (1)
+Component Type: ValuablePropSwitch | Name: Tiny Switch (1)
+Component Type: UnityEngine.Transform | Name: Bookshelf - Full 02 (1)
+Component Type: UnityEngine.MeshFilter | Name: Bookshelf - Full 02 (1)
+Component Type: UnityEngine.MeshRenderer | Name: Bookshelf - Full 02 (1)
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Bookshelf - Full 02 (1)
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Gym Locker
+Component Type: UnityEngine.MeshFilter | Name: Gym Locker
+Component Type: UnityEngine.MeshRenderer | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Gym Locker
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Tiny Switch (1)
+Component Type: ValuablePropSwitch | Name: Tiny Switch (1)
+Component Type: UnityEngine.Transform | Name: Bookshelf - Full 01 (1)
+Component Type: UnityEngine.MeshFilter | Name: Bookshelf - Full 01 (1)
+Component Type: UnityEngine.MeshRenderer | Name: Bookshelf - Full 01 (1)
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Bookshelf - Full 01 (1)
+Component Type: UnityEngine.Transform | Name: Props
+Component Type: UnityEngine.Transform | Name: ---- Props ------------
+Component Type: UnityEngine.Transform | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Module | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Gym Locker
+Component Type: UnityEngine.MeshFilter | Name: Gym Locker
+Component Type: UnityEngine.MeshRenderer | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Gym Locker
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Small (18)
+Component Type: ValuablePropSwitch | Name: Small (18)
+Component Type: UnityEngine.Transform | Name: Valuable Switch
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Valuables
+Component Type: UnityEngine.Transform | Name: Kitchen Fridge
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Kitchen Fridge
+Component Type: UnityEngine.Transform | Name: Props
+Component Type: UnityEngine.Transform | Name: ---- Props ------------
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Small (16)
+Component Type: ValuablePropSwitch | Name: Small (16)
+Component Type: UnityEngine.Transform | Name: Valuable Switch
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Gym Locker
+Component Type: UnityEngine.MeshFilter | Name: Gym Locker
+Component Type: UnityEngine.MeshRenderer | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Gym Locker
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Gym Locker
+Component Type: UnityEngine.MeshFilter | Name: Gym Locker
+Component Type: UnityEngine.MeshRenderer | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Gym Locker
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Tiny
+Component Type: ValuablePropSwitch | Name: Tiny
+Component Type: UnityEngine.Transform | Name: Valuable Switches
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Tiny Switch
+Component Type: ValuablePropSwitch | Name: Tiny Switch
+Component Type: UnityEngine.Transform | Name: Bookshelf - Full 01
+Component Type: UnityEngine.MeshFilter | Name: Bookshelf - Full 01
+Component Type: UnityEngine.MeshRenderer | Name: Bookshelf - Full 01
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Bookshelf - Full 01
+Component Type: UnityEngine.Transform | Name: Props
+Component Type: UnityEngine.Transform | Name: ---- Props ------------
+Component Type: UnityEngine.Transform | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Module | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Tiny Switch
+Component Type: ValuablePropSwitch | Name: Tiny Switch
+Component Type: UnityEngine.Transform | Name: Bookshelf - Full 01 (1)
+Component Type: UnityEngine.MeshFilter | Name: Bookshelf - Full 01 (1)
+Component Type: UnityEngine.MeshRenderer | Name: Bookshelf - Full 01 (1)
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Bookshelf - Full 01 (1)
+Component Type: UnityEngine.Transform | Name: Props
+Component Type: UnityEngine.Transform | Name: ---- Props ------------
+Component Type: UnityEngine.Transform | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Module | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Valuables
+Component Type: UnityEngine.Transform | Name: Kitchen Fridge
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Kitchen Fridge
+Component Type: UnityEngine.Transform | Name: Props
+Component Type: UnityEngine.Transform | Name: ---- Props ------------
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Bookshelf - Full 01
+Component Type: UnityEngine.MeshFilter | Name: Bookshelf - Full 01
+Component Type: UnityEngine.MeshRenderer | Name: Bookshelf - Full 01
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Bookshelf - Full 01
+Component Type: UnityEngine.Transform | Name: Props
+Component Type: UnityEngine.Transform | Name: ---- Props ------------
+Component Type: UnityEngine.Transform | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Module | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Small (8)
+Component Type: ValuablePropSwitch | Name: Small (8)
+Component Type: UnityEngine.Transform | Name: Valuable Switch
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Gym Locker
+Component Type: UnityEngine.MeshFilter | Name: Gym Locker
+Component Type: UnityEngine.MeshRenderer | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Gym Locker
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Tiny Switch (1)
+Component Type: ValuablePropSwitch | Name: Tiny Switch (1)
+Component Type: UnityEngine.Transform | Name: Bookshelf - Full 01
+Component Type: UnityEngine.MeshFilter | Name: Bookshelf - Full 01
+Component Type: UnityEngine.MeshRenderer | Name: Bookshelf - Full 01
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Bookshelf - Full 01
+Component Type: UnityEngine.Transform | Name: Props
+Component Type: UnityEngine.Transform | Name: ---- Props ------------
+Component Type: UnityEngine.Transform | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Module | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Gym Locker
+Component Type: UnityEngine.MeshFilter | Name: Gym Locker
+Component Type: UnityEngine.MeshRenderer | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Gym Locker
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Gym Locker
+Component Type: UnityEngine.MeshFilter | Name: Gym Locker
+Component Type: UnityEngine.MeshRenderer | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Gym Locker
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Tiny Switch (2)
+Component Type: ValuablePropSwitch | Name: Tiny Switch (2)
+Component Type: UnityEngine.Transform | Name: Bookshelf - Full 01
+Component Type: UnityEngine.MeshFilter | Name: Bookshelf - Full 01
+Component Type: UnityEngine.MeshRenderer | Name: Bookshelf - Full 01
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Bookshelf - Full 01
+Component Type: UnityEngine.Transform | Name: Props
+Component Type: UnityEngine.Transform | Name: ---- Props ------------
+Component Type: UnityEngine.Transform | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Module | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Module | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Valuables
+Component Type: UnityEngine.Transform | Name: Kitchen Fridge
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Kitchen Fridge
+Component Type: UnityEngine.Transform | Name: Props
+Component Type: UnityEngine.Transform | Name: ---- Props ------------
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Shop Toilet
+Component Type: UnityEngine.MeshFilter | Name: Shop Toilet
+Component Type: UnityEngine.MeshRenderer | Name: Shop Toilet
+Component Type: UnityEngine.MeshCollider | Name: Shop Toilet
+Component Type: UnityEngine.BoxCollider | Name: Shop Toilet
+Component Type: UnityEngine.BoxCollider | Name: Shop Toilet
+Component Type: UnityEngine.Transform | Name: Props
+Component Type: UnityEngine.Transform | Name: ---- Props ------------
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Gym Locker
+Component Type: UnityEngine.MeshFilter | Name: Gym Locker
+Component Type: UnityEngine.MeshRenderer | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Gym Locker
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Bookshelf - Full 01 (1)
+Component Type: UnityEngine.MeshFilter | Name: Bookshelf - Full 01 (1)
+Component Type: UnityEngine.MeshRenderer | Name: Bookshelf - Full 01 (1)
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Bookshelf - Full 01 (1)
+Component Type: UnityEngine.Transform | Name: Props
+Component Type: UnityEngine.Transform | Name: ---- Props ------------
+Component Type: UnityEngine.Transform | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Module | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Gym Locker (1)
+Component Type: UnityEngine.MeshFilter | Name: Gym Locker (1)
+Component Type: UnityEngine.MeshRenderer | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Gym Locker (1)
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Module | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Tiny Switch (2)
+Component Type: ValuablePropSwitch | Name: Tiny Switch (2)
+Component Type: UnityEngine.Transform | Name: Bookshelf - Full 01 (1)
+Component Type: UnityEngine.MeshFilter | Name: Bookshelf - Full 01 (1)
+Component Type: UnityEngine.MeshRenderer | Name: Bookshelf - Full 01 (1)
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Bookshelf - Full 01 (1)
+Component Type: UnityEngine.Transform | Name: Props
+Component Type: UnityEngine.Transform | Name: ---- Props ------------
+Component Type: UnityEngine.Transform | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Module | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Gym Locker (1)
+Component Type: UnityEngine.MeshFilter | Name: Gym Locker (1)
+Component Type: UnityEngine.MeshRenderer | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Gym Locker (1)
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Module | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Gym Locker (1)
+Component Type: UnityEngine.MeshFilter | Name: Gym Locker (1)
+Component Type: UnityEngine.MeshRenderer | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Gym Locker (1)
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Bookshelf - Full 02 (1)
+Component Type: UnityEngine.MeshFilter | Name: Bookshelf - Full 02 (1)
+Component Type: UnityEngine.MeshRenderer | Name: Bookshelf - Full 02 (1)
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Bookshelf - Full 02 (1)
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Gym Locker
+Component Type: UnityEngine.MeshFilter | Name: Gym Locker
+Component Type: UnityEngine.MeshRenderer | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Gym Locker
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Small (11)
+Component Type: ValuablePropSwitch | Name: Small (11)
+Component Type: UnityEngine.Transform | Name: Valuable Switch
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Gym Locker
+Component Type: UnityEngine.MeshFilter | Name: Gym Locker
+Component Type: UnityEngine.MeshRenderer | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Gym Locker
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Small (12)
+Component Type: ValuablePropSwitch | Name: Small (12)
+Component Type: UnityEngine.Transform | Name: Valuable Switch
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Gym Locker (1)
+Component Type: UnityEngine.MeshFilter | Name: Gym Locker (1)
+Component Type: UnityEngine.MeshRenderer | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Gym Locker (1)
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Bookshelf - Full 02
+Component Type: UnityEngine.MeshFilter | Name: Bookshelf - Full 02
+Component Type: UnityEngine.MeshRenderer | Name: Bookshelf - Full 02
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Bookshelf - Full 02
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tiny
+Component Type: ValuableVolume | Name: Valuable Volume - Tiny
+Component Type: UnityEngine.Transform | Name: Gym Locker
+Component Type: UnityEngine.MeshFilter | Name: Gym Locker
+Component Type: UnityEngine.MeshRenderer | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Gym Locker
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Child Components of Small volumes
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Gym Locker
+Component Type: UnityEngine.MeshFilter | Name: Gym Locker
+Component Type: UnityEngine.MeshRenderer | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Gym Locker
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Valuables
+Component Type: UnityEngine.Transform | Name: Kitchen Fridge
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Kitchen Fridge
+Component Type: UnityEngine.Transform | Name: Props
+Component Type: UnityEngine.Transform | Name: ---- Props ------------
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Small (14)
+Component Type: ValuablePropSwitch | Name: Small (14)
+Component Type: UnityEngine.Transform | Name: Valuable Switch
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Gym Locker (1)
+Component Type: UnityEngine.MeshFilter | Name: Gym Locker (1)
+Component Type: UnityEngine.MeshRenderer | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker (1)
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Gym Locker (1)
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Small (21)
+Component Type: ValuablePropSwitch | Name: Small (21)
+Component Type: UnityEngine.Transform | Name: Valuable Switch
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Small
+Component Type: ValuablePropSwitch | Name: Small
+Component Type: UnityEngine.Transform | Name: Valuable Switches
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Gym Locker
+Component Type: UnityEngine.MeshFilter | Name: Gym Locker
+Component Type: UnityEngine.MeshRenderer | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Gym Locker
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Small
+Component Type: ValuablePropSwitch | Name: Small
+Component Type: UnityEngine.Transform | Name: Valuable Switches
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Small (22)
+Component Type: ValuablePropSwitch | Name: Small (22)
+Component Type: UnityEngine.Transform | Name: Valuable Switch
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Valuables
+Component Type: UnityEngine.Transform | Name: Kitchen Fridge
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Kitchen Fridge
+Component Type: UnityEngine.Transform | Name: Props
+Component Type: UnityEngine.Transform | Name: ---- Props ------------
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Small (17)
+Component Type: ValuablePropSwitch | Name: Small (17)
+Component Type: UnityEngine.Transform | Name: Valuable Switch
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Small (15)
+Component Type: ValuablePropSwitch | Name: Small (15)
+Component Type: UnityEngine.Transform | Name: Valuable Switch
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Gym Locker
+Component Type: UnityEngine.MeshFilter | Name: Gym Locker
+Component Type: UnityEngine.MeshRenderer | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: UnityEngine.BoxCollider | Name: Gym Locker
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Gym Locker
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Small (9)
+Component Type: ValuablePropSwitch | Name: Small (9)
+Component Type: UnityEngine.Transform | Name: Valuable Switch
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Small (7)
+Component Type: ValuablePropSwitch | Name: Small (7)
+Component Type: UnityEngine.Transform | Name: Valuable Switch
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Valuables
+Component Type: UnityEngine.Transform | Name: Kitchen Fridge
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Kitchen Fridge
+Component Type: UnityEngine.Transform | Name: Props
+Component Type: UnityEngine.Transform | Name: ---- Props ------------
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Valuables
+Component Type: UnityEngine.Transform | Name: Kitchen Fridge
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Kitchen Fridge
+Component Type: UnityEngine.Transform | Name: Props
+Component Type: UnityEngine.Transform | Name: ---- Props ------------
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Module | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Small
+Component Type: ValuablePropSwitch | Name: Small
+Component Type: UnityEngine.Transform | Name: Valuable Switch
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Small (23)
+Component Type: ValuablePropSwitch | Name: Small (23)
+Component Type: UnityEngine.Transform | Name: Valuable Switch
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Valuables
+Component Type: UnityEngine.Transform | Name: Kitchen Fridge
+Component Type: Unity.AI.Navigation.NavMeshModifier | Name: Kitchen Fridge
+Component Type: UnityEngine.Transform | Name: Props
+Component Type: UnityEngine.Transform | Name: ---- Props ------------
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Small (19)
+Component Type: ValuablePropSwitch | Name: Small (19)
+Component Type: UnityEngine.Transform | Name: Valuable Switch
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Small (13)
+Component Type: ValuablePropSwitch | Name: Small (13)
+Component Type: UnityEngine.Transform | Name: Valuable Switch
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Small
+Component Type: ValuablePropSwitch | Name: Small
+Component Type: UnityEngine.Transform | Name: Valuable Switches
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Small (2)
+Component Type: ValuablePropSwitch | Name: Small (2)
+Component Type: UnityEngine.Transform | Name: Valuable Switch
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Small (1)
+Component Type: ValuablePropSwitch | Name: Small (1)
+Component Type: UnityEngine.Transform | Name: Valuable Switch
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Small (10)
+Component Type: ValuablePropSwitch | Name: Small (10)
+Component Type: UnityEngine.Transform | Name: Valuable Switch
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Small (2)
+Component Type: ValuablePropSwitch | Name: Small (2)
+Component Type: UnityEngine.Transform | Name: Valuable Switches
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Small (20)
+Component Type: ValuablePropSwitch | Name: Small (20)
+Component Type: UnityEngine.Transform | Name: Valuable Switch
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Small (4)
+Component Type: ValuablePropSwitch | Name: Small (4)
+Component Type: UnityEngine.Transform | Name: Valuable Switch
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Module | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Small
+Component Type: ValuableVolume | Name: Valuable Volume - Small
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Small (3)
+Component Type: ValuablePropSwitch | Name: Small (3)
+Component Type: UnityEngine.Transform | Name: Valuable Switch
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Child Components of Medium volumes
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Medium
+Component Type: ValuableVolume | Name: Valuable Volume - Medium
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Medium
+Component Type: ValuableVolume | Name: Valuable Volume - Medium
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Medium
+Component Type: ValuableVolume | Name: Valuable Volume - Medium
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Medium
+Component Type: ValuablePropSwitch | Name: Medium
+Component Type: UnityEngine.Transform | Name: Valuable Switch
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Medium
+Component Type: ValuableVolume | Name: Valuable Volume - Medium
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Medium
+Component Type: ValuablePropSwitch | Name: Medium
+Component Type: UnityEngine.Transform | Name: Valuable Switches
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Medium
+Component Type: ValuableVolume | Name: Valuable Volume - Medium
+Component Type: UnityEngine.Transform | Name: Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Medium
+Component Type: ValuableVolume | Name: Valuable Volume - Medium
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Medium
+Component Type: ValuableVolume | Name: Valuable Volume - Medium
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Medium
+Component Type: ValuableVolume | Name: Valuable Volume - Medium
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Medium
+Component Type: ValuableVolume | Name: Valuable Volume - Medium
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Medium
+Component Type: ValuableVolume | Name: Valuable Volume - Medium
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Medium
+Component Type: ValuableVolume | Name: Valuable Volume - Medium
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Medium
+Component Type: ValuableVolume | Name: Valuable Volume - Medium
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Medium
+Component Type: ValuableVolume | Name: Valuable Volume - Medium
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Medium
+Component Type: ValuableVolume | Name: Valuable Volume - Medium
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Medium
+Component Type: ValuablePropSwitch | Name: Medium
+Component Type: UnityEngine.Transform | Name: Valuable Switches
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Medium
+Component Type: ValuableVolume | Name: Valuable Volume - Medium
+Component Type: UnityEngine.Transform | Name: Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Medium
+Component Type: ValuableVolume | Name: Valuable Volume - Medium
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Medium
+Component Type: ValuableVolume | Name: Valuable Volume - Medium
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Medium (1)
+Component Type: ValuablePropSwitch | Name: Medium (1)
+Component Type: UnityEngine.Transform | Name: Valuable Switches
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Medium
+Component Type: ValuableVolume | Name: Valuable Volume - Medium
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Medium
+Component Type: ValuableVolume | Name: Valuable Volume - Medium
+Component Type: UnityEngine.Transform | Name: Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Module | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Medium
+Component Type: ValuableVolume | Name: Valuable Volume - Medium
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Medium
+Component Type: ValuableVolume | Name: Valuable Volume - Medium
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Child Components of Big volumes
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Big
+Component Type: ValuableVolume | Name: Valuable Volume - Big
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Big
+Component Type: ValuableVolume | Name: Valuable Volume - Big
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Big
+Component Type: ValuableVolume | Name: Valuable Volume - Big
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Big
+Component Type: ValuableVolume | Name: Valuable Volume - Big
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Big
+Component Type: ValuableVolume | Name: Valuable Volume - Big
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Big
+Component Type: ValuableVolume | Name: Valuable Volume - Big
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Big
+Component Type: ValuableVolume | Name: Valuable Volume - Big
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Big
+Component Type: ValuableVolume | Name: Valuable Volume - Big
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Big
+Component Type: ValuableVolume | Name: Valuable Volume - Big
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Big
+Component Type: ValuableVolume | Name: Valuable Volume - Big
+Component Type: UnityEngine.Transform | Name: Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Big
+Component Type: ValuableVolume | Name: Valuable Volume - Big
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Child Components of Wide volumes
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Wide
+Component Type: ValuableVolume | Name: Valuable Volume - Wide
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Wide(1)
+Component Type: ValuablePropSwitch | Name: Wide(1)
+Component Type: UnityEngine.Transform | Name: Valuable Switch
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Wide
+Component Type: ValuableVolume | Name: Valuable Volume - Wide
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Wide
+Component Type: ValuablePropSwitch | Name: Wide
+Component Type: UnityEngine.Transform | Name: Valuable Switches
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Wide
+Component Type: ValuableVolume | Name: Valuable Volume - Wide
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Wide
+Component Type: ValuablePropSwitch | Name: Wide
+Component Type: UnityEngine.Transform | Name: Valuable Switches
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Wide
+Component Type: ValuableVolume | Name: Valuable Volume - Wide
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Wide
+Component Type: ValuablePropSwitch | Name: Wide
+Component Type: UnityEngine.Transform | Name: Valuable Switches
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Wide
+Component Type: ValuableVolume | Name: Valuable Volume - Wide
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Wide
+Component Type: ValuablePropSwitch | Name: Wide
+Component Type: UnityEngine.Transform | Name: Valuable Switches
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Wide
+Component Type: ValuableVolume | Name: Valuable Volume - Wide
+Component Type: UnityEngine.Transform | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Module | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Wide
+Component Type: ValuableVolume | Name: Valuable Volume - Wide
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Wide 2
+Component Type: ValuablePropSwitch | Name: Wide 2
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Wide
+Component Type: ValuableVolume | Name: Valuable Volume - Wide
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Wide
+Component Type: ValuablePropSwitch | Name: Wide
+Component Type: UnityEngine.Transform | Name: Valuable Switch
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Wide
+Component Type: ValuableVolume | Name: Valuable Volume - Wide
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Wide
+Component Type: ValuablePropSwitch | Name: Wide
+Component Type: UnityEngine.Transform | Name: Valuable Switch
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Child Components of Tall volumes
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tall
+Component Type: ValuableVolume | Name: Valuable Volume - Tall
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Tall (2)
+Component Type: ValuablePropSwitch | Name: Tall (2)
+Component Type: UnityEngine.Transform | Name: Valuable Switches
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tall
+Component Type: ValuableVolume | Name: Valuable Volume - Tall
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Tall
+Component Type: ValuablePropSwitch | Name: Tall
+Component Type: UnityEngine.Transform | Name: Valuable Switches
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tall
+Component Type: ValuableVolume | Name: Valuable Volume - Tall
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Tall
+Component Type: ValuablePropSwitch | Name: Tall
+Component Type: UnityEngine.Transform | Name: Valuable Switch
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tall
+Component Type: ValuableVolume | Name: Valuable Volume - Tall
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tall
+Component Type: ValuableVolume | Name: Valuable Volume - Tall
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Tall (1)
+Component Type: ValuablePropSwitch | Name: Tall (1)
+Component Type: UnityEngine.Transform | Name: Valuable Switches
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tall
+Component Type: ValuableVolume | Name: Valuable Volume - Tall
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Tall
+Component Type: ValuablePropSwitch | Name: Tall
+Component Type: UnityEngine.Transform | Name: Valuable Switch
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tall
+Component Type: ValuableVolume | Name: Valuable Volume - Tall
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tall
+Component Type: ValuableVolume | Name: Valuable Volume - Tall
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Tall
+Component Type: ValuablePropSwitch | Name: Tall
+Component Type: UnityEngine.Transform | Name: Valuable Switches
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tall
+Component Type: ValuableVolume | Name: Valuable Volume - Tall
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Tall
+Component Type: ValuableVolume | Name: Valuable Volume - Tall
+Component Type: UnityEngine.Transform | Name: Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Child Components of VeryTall volumes
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Very Tall
+Component Type: ValuableVolume | Name: Valuable Volume - Very Tall
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Very Tall
+Component Type: ValuablePropSwitch | Name: Very Tall
+Component Type: UnityEngine.Transform | Name: Valuable Switches
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Very Tall
+Component Type: ValuableVolume | Name: Valuable Volume - Very Tall
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Very Tall
+Component Type: ValuableVolume | Name: Valuable Volume - Very Tall
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Very Tall
+Component Type: ValuablePropSwitch | Name: Very Tall
+Component Type: UnityEngine.Transform | Name: Valuable Switches
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Vat Research(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Very Tall
+Component Type: ValuableVolume | Name: Valuable Volume - Very Tall
+Component Type: UnityEngine.Transform | Name: Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Module | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - DE - 1 - Small Office(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Very Tall
+Component Type: ValuableVolume | Name: Valuable Volume - Very Tall
+Component Type: UnityEngine.Transform | Name: Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Outside Ice Walls 2(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Very Tall
+Component Type: ValuableVolume | Name: Valuable Volume - Very Tall
+Component Type: UnityEngine.Transform | Name: Non Switch Valuables
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Module | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - N - 1 - Kitchen, bathroom and small rec room(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+
+Component Type: UnityEngine.Transform | Name: Valuable Volume - Very Tall
+Component Type: ValuableVolume | Name: Valuable Volume - Very Tall
+Component Type: UnityEngine.Transform | Name: Valuable Parent
+Component Type: UnityEngine.Transform | Name: Very Tall
+Component Type: ValuablePropSwitch | Name: Very Tall
+Component Type: UnityEngine.Transform | Name: Valuable Switch
+Component Type: UnityEngine.Transform | Name: ---- Dependencies ----
+Component Type: UnityEngine.Transform | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Module | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: Photon.Pun.PhotonView | Name: Module - Arctic - P - 1 - Corridor(Clone)
+Component Type: UnityEngine.Transform | Name: Level
+Component Type: UnityEngine.Transform | Name: Level Generator
+

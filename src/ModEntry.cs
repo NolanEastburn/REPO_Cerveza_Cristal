@@ -36,15 +36,6 @@ public class ModEntry : BaseUnityPlugin
 
     private static IPunPrefabPool _multiplayerPool { get; set; } = null;
 
-    [HarmonyPatch(typeof(ValuableDirector), nameof(ValuableDirector.SetupHost))]
-    class TestPatch
-    {
-        static void Prefix()
-        {
-            Logger.LogInfo("Foobert doobert do");
-        }
-    }
-
     [HarmonyPatch(typeof(LevelGenerator), "Start")]
     class ModAssetRestorePatch
     {
@@ -117,6 +108,9 @@ public class ModEntry : BaseUnityPlugin
             {
                 Dumper.SetLogger(Logger);
                 Dumper.Enable();
+
+                Utils.SetLogger(Logger);
+                Utils.SelectLevel(Utils.LevelTypes.ARCTIC);
 
                 // Harmony test
                 HarmonyFileLog.Enabled = true;

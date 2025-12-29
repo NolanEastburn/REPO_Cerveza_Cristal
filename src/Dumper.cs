@@ -1,14 +1,14 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
-using System.Runtime.CompilerServices;
 using BepInEx;
 using BepInEx.Logging;
-using Cerveza_Cristal;
 using HarmonyLib;
 using UnityEngine;
 
+namespace Cerveza_Cristal;
+
+// Runs after Spawn, but only runs once so we don't re-dump each time something spawns in.
 [HarmonyPatch(typeof(ValuableDirector), "Spawn")]
 class Dumper
 {
