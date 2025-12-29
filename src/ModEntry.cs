@@ -115,9 +115,13 @@ public class ModEntry : BaseUnityPlugin
         {
             if (RunManager.instance != null)
             {
+                Dumper.SetLogger(Logger);
+                Dumper.Enable();
+
                 // Harmony test
                 HarmonyFileLog.Enabled = true;
                 Harmony harmony = new Harmony("com.nooterdooter.cerveza_cristal");
+
                 harmony.PatchAll();
 
                 foreach (IModRegistry registry in _modRegistries)
