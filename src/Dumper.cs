@@ -38,22 +38,22 @@ class Dumper
             List<ValuableVolume> tinyVolumes = (List<ValuableVolume>)tinyVolumesField.GetValue(__instance);
 
             FieldInfo smallVolumesField = __instance.GetType().GetField("smallVolumes", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.GetField);
-            List<ValuableVolume> smallVolumes = (List<ValuableVolume>)tinyVolumesField.GetValue(__instance);
+            List<ValuableVolume> smallVolumes = (List<ValuableVolume>)smallVolumesField.GetValue(__instance);
 
             FieldInfo mediumVolumesField = __instance.GetType().GetField("mediumVolumes", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.GetField);
-            List<ValuableVolume> mediumVolumes = (List<ValuableVolume>)tinyVolumesField.GetValue(__instance);
+            List<ValuableVolume> mediumVolumes = (List<ValuableVolume>)mediumVolumesField.GetValue(__instance);
 
             FieldInfo bigVolumesField = __instance.GetType().GetField("bigVolumes", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.GetField);
-            List<ValuableVolume> bigVolumes = (List<ValuableVolume>)tinyVolumesField.GetValue(__instance);
+            List<ValuableVolume> bigVolumes = (List<ValuableVolume>)bigVolumesField.GetValue(__instance);
 
             FieldInfo wideVolumesField = __instance.GetType().GetField("wideVolumes", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.GetField);
-            List<ValuableVolume> wideVolumes = (List<ValuableVolume>)tinyVolumesField.GetValue(__instance);
+            List<ValuableVolume> wideVolumes = (List<ValuableVolume>)wideVolumesField.GetValue(__instance);
 
             FieldInfo tallVolumesField = __instance.GetType().GetField("tallVolumes", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.GetField);
-            List<ValuableVolume> tallVolumes = (List<ValuableVolume>)tinyVolumesField.GetValue(__instance);
+            List<ValuableVolume> tallVolumes = (List<ValuableVolume>)tallVolumesField.GetValue(__instance);
 
             FieldInfo veryTallVolumesField = __instance.GetType().GetField("veryTallVolumes", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.GetField);
-            List<ValuableVolume> veryTallVolumes = (List<ValuableVolume>)tinyVolumesField.GetValue(__instance);
+            List<ValuableVolume> veryTallVolumes = (List<ValuableVolume>)veryTallVolumesField.GetValue(__instance);
 
             StreamWriter writer = new StreamWriter(Path.Combine(Paths.PluginPath, "Dumper.txt"));
 
@@ -64,9 +64,9 @@ class Dumper
 
             foreach (List<ValuableVolume> vs in volumes)
             {
+                writer.WriteLine($"Child Components of {vs[0].VolumeType} volumes");
                 foreach (ValuableVolume v in vs)
                 {
-                    writer.WriteLine($"Child Components of {v.VolumeType} volumes");
                     foreach (Component c in v.GetComponentsInParent<Component>())
                     {
                         writer.WriteLine($"Component Type: {c.GetType()} | Name: {c.name}");
