@@ -11,5 +11,5 @@ REPO_Decomp
 REPO_Decomp/** */
 
 # Ignore build outputs
-build_output
-build_output/** */
+mod_contents
+mod_contents/** */

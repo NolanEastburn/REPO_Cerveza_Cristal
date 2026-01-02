@@ -20,7 +20,7 @@
     <PUNDLLName>PhotonUnityNetworking</PUNDLLName>
     <PUNDLLPath>$(GameRoot)/REPO_Data/Managed/$(PUNDLLName).dll</PUNDLLPath>
     <ModFolderName>nooterdooter_cerveza_cristal</ModFolderName>
-    <ModFolderPath>./build_output</ModFolderPath>
+    <ModFolderPath>./mod_contents</ModFolderPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -52,6 +52,7 @@
 
   <Target Name="PostClean" AfterTargets="Clean">
     <RemoveDir Directories="$(DecompFolder)"/>
+    <RemoveDir Directories="$(ModFolderPath)"/>
   </Target>
 
   <Target Name="REPO_Decomp">
