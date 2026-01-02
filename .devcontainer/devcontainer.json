@@ -1,0 +1,13 @@
+{
+    "image": "nooterdooter/repo_cerveza_cristal:initial",
+    "containerUser": "nooterdooter",
+    "remoteUser": "nooterdooter",
+    "updateRemoteUserUID": true,
+    "customizations": 
+    {
+        "vscode": 
+        {
+            "extensions": ["streetsidesoftware.code-spell-checker", "ms-dotnettools.csdevkit"]
+        }
+    }
+}
