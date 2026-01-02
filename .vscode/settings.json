@@ -1,3 +1,11 @@
 {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "cSpell.words": [
+        "Cervecerías",
+        "Cerveza",
+        "Compañía",
+        "Cristal",
+        "Cristla",
+        "Unidas"
+    ]
 }
