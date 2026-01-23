@@ -129,7 +129,13 @@ public class ModEntry : BaseUnityPlugin
 
             _multiplayerPool = new ModPrefabPool(_modValuableRegistry, Logger);
 
-            gameObject.SetActive(false);
+            //gameObject.SetActive(false);
+        }
+
+        if (Input.GetKey(KeyCode.Delete))
+        {
+            Logger.LogWarning("pressed delete!");
+            Utils.SpawnModValuable(_modValuableRegistry, ModValuables.BOTTLE);
         }
 
     }

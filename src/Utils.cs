@@ -1,6 +1,9 @@
+using System;
 using System.Diagnostics.Tracing;
 using BepInEx.Logging;
 using HarmonyLib;
+using UnityEngine;
+using UnityEngine.UIElements.Collections;
 
 namespace Cerveza_Cristal;
 
@@ -38,6 +41,20 @@ public static class Utils
             {
                 __instance.levelCurrent = __instance.levels[(int)_selectedLevel];
             }
+        }
+    }
+
+    public static void SpawnModValuable(ModValuableRegistry registry, ModValuableRegistry.ValuableAddition valuable)
+    {
+        // Get the current RunManager
+
+        RunManager runManager = RunManager.instance;
+        GameDirector director = GameDirector.instance;
+
+        if (director != null)
+        {
+            _logger.LogWarning("Spawning a bottle!");
+            UnityEngine.Object.Instantiate(registry.Registry[registry.GetRegistryName(valuable.ValuableData)].Item1, director.PlayerList[0].gameObject.transform.position, director.PlayerList[0].gameObject.transform.rotation);
         }
     }
 }
