@@ -2,6 +2,7 @@
     "image": "nooterdooter/repo_cerveza_cristal:initial",
     "containerUser": "nooterdooter",
     "remoteUser": "nooterdooter",
+    "runArgs": ["--network=host"],
     "updateRemoteUserUID": true,
     "customizations": 
     {
