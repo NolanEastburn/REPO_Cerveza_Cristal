@@ -10,6 +10,7 @@ public class ModValuableRegistry : IModRegistry
 {
     public class ValuableAddition
     {
+
         public string AssetName { get; private set; }
 
         public Data ValuableData { get; private set; }
@@ -69,7 +70,7 @@ public class ModValuableRegistry : IModRegistry
 
     }
 
-    public Dictionary<string, (GameObject, Data)> Registry { get; private set; } = null;
+    private Dictionary<string, (GameObject, Data)> _registry { get; set; } = null;
 
     private AssetBundle _assetBundle { get; set; }
 
@@ -139,7 +140,7 @@ public class ModValuableRegistry : IModRegistry
                 }
             }
 
-            Registry.Add(GetRegistryName(addition.ValuableData), (go, addition.ValuableData));
+            _registry.Add(GetRegistryName(addition.ValuableData), (go, addition.ValuableData));
         }
         else
         {
@@ -147,12 +148,27 @@ public class ModValuableRegistry : IModRegistry
         }
     }
 
+    public Dictionary<string, (GameObject, Data)> GetRegistry()
+    {
+        return _registry;
+    }
+
+    public (GameObject, Data) GetRegistryEntry(ValuableAddition addition)
+    {
+        return _registry[GetRegistryName(addition)];
+    }
+
+    public (GameObject, Data) GetRegistryEntry(string key)
+    {
+        return _registry[key];
+    }
+
     public ModValuableRegistry(AssetBundle assetBundle, ManualLogSource logger)
     {
         _assetBundle = assetBundle;
         _logger = logger;
 
-        Registry = new Dictionary<string, (GameObject, Data)>();
+        _registry = new Dictionary<string, (GameObject, Data)>();
     }
 
     public void ApplyAdditionRegistrations(RunManager runManager)
@@ -161,7 +177,7 @@ public class ModValuableRegistry : IModRegistry
         {
             foreach (LevelValuables lv in level.ValuablePresets)
             {
-                foreach ((GameObject, ModValuableRegistry.Data) regEntry in Registry.Values)
+                foreach ((GameObject, ModValuableRegistry.Data) regEntry in _registry.Values)
                 {
                     PrefabRef prefabRef = CreatePrefabRef(regEntry);
 
@@ -199,6 +215,11 @@ public class ModValuableRegistry : IModRegistry
                 }
             }
         }
+    }
+
+    public string GetRegistryName(ValuableAddition addition)
+    {
+        return GetRegistryName(addition.ValuableData);
     }
 
     public string GetRegistryName(ModValuableRegistry.Data data)

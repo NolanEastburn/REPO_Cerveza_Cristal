@@ -45,7 +45,7 @@ public class ModEntry : BaseUnityPlugin
 
             if (singleplayerPool != null)
             {
-                foreach ((GameObject, ModValuableRegistry.Data) regEntry in _modValuableRegistry.Registry.Values)
+                foreach ((GameObject, ModValuableRegistry.Data) regEntry in _modValuableRegistry.GetRegistry().Values)
                 {
                     singleplayerPool.Add(_modValuableRegistry.GetRegistryName(regEntry.Item2), regEntry.Item1);
                 }
@@ -104,8 +104,10 @@ public class ModEntry : BaseUnityPlugin
 
         if (assetBundlesLoaded && !additionsRegistered && !_failedToLoadAssetBundle)
         {
-            if (RunManager.instance != null)
+            RunManager runManager; try
             {
+                runManager = Utils.GetRunManager();
+
                 Dumper.SetLogger(Logger);
                 Dumper.Enable();
 
@@ -114,7 +116,7 @@ public class ModEntry : BaseUnityPlugin
 
                 // Harmony test
                 HarmonyFileLog.Enabled = true;
-                Harmony harmony = new Harmony("com.nooterdooter.cerveza_cristal");
+                Harmony harmony = new Harmony(Utils.UNIQUE_ORG_STRING);
 
                 harmony.PatchAll();
 
@@ -123,18 +125,21 @@ public class ModEntry : BaseUnityPlugin
                     registry.ApplyAdditionRegistrations(RunManager.instance);
                 }
 
+                _multiplayerPool = new ModPrefabPool(_modValuableRegistry, Logger);
 
                 additionsRegistered = true;
+
+                //gameObject.SetActive(false);
             }
-
-            _multiplayerPool = new ModPrefabPool(_modValuableRegistry, Logger);
-
-            //gameObject.SetActive(false);
+            catch (RepoStaticInstanceNullException)
+            {
+                // Do nothing. We are waiting for the static RunManager instance to not be null.
+            }
         }
 
+        // Periodic processing.
         if (Input.GetKey(KeyCode.Delete))
         {
-            Logger.LogWarning("pressed delete!");
             Utils.SpawnModValuable(_modValuableRegistry, ModValuables.BOTTLE);
         }
 

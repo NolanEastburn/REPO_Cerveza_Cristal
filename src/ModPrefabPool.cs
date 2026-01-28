@@ -20,7 +20,7 @@ public class ModPrefabPool : IPunPrefabPool
 
     private bool IsModAddition(string prefabId)
     {
-        return _modValuableRegistry.Registry.ContainsKey(ExtractGameObjectName(prefabId));
+        return _modValuableRegistry.GetRegistry().ContainsKey(ExtractGameObjectName(prefabId));
     }
 
     public ModPrefabPool(ModValuableRegistry modValuableRegistry, ManualLogSource logger)
@@ -41,9 +41,9 @@ public class ModPrefabPool : IPunPrefabPool
         {
             string key = ExtractGameObjectName(prefabId);
 
-            if (_modValuableRegistry.Registry.ContainsKey(key))
+            if (_modValuableRegistry.GetRegistry().ContainsKey(key))
             {
-                GameObject go = Object.Instantiate(_modValuableRegistry.Registry[ExtractGameObjectName(prefabId)].Item1, position, rotation);
+                GameObject go = Object.Instantiate(_modValuableRegistry.GetRegistryEntry(key).Item1, position, rotation);
                 go.SetActive(false);
                 return go;
             }
