@@ -108,11 +108,8 @@ public class ModEntry : BaseUnityPlugin
             {
                 runManager = Utils.GetRunManager();
 
-                Dumper.SetLogger(Logger);
-                Dumper.Enable();
-
                 Utils.SetLogger(Logger);
-                Utils.SelectLevel(Utils.LevelTypes.ARCTIC);
+                Utils.SelectLevel(Utils.LevelTypes.MANOR);
 
                 // Harmony test
                 HarmonyFileLog.Enabled = true;
@@ -131,7 +128,7 @@ public class ModEntry : BaseUnityPlugin
 
                 //gameObject.SetActive(false);
             }
-            catch (RepoStaticInstanceNullException)
+            catch (RepoSingletonNullException)
             {
                 // Do nothing. We are waiting for the static RunManager instance to not be null.
             }
@@ -140,9 +137,14 @@ public class ModEntry : BaseUnityPlugin
         // Periodic processing.
         if (Input.GetKey(KeyCode.Delete))
         {
-            Utils.SpawnModValuable(_modValuableRegistry, ModValuables.BOTTLE);
+            try
+            {
+                Utils.SpawnModValuable(_modValuableRegistry, ModValuables.BOTTLE);
+            }
+            catch (RepoInvalidActionException e)
+            {
+                Logger.LogWarning(string.Format("Could not spawn the bottle because of the following exception: {0}", e.Message));
+            }
         }
-
     }
-
 }

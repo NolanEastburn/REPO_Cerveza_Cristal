@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Diagnostics.Tracing;
 using BepInEx.Logging;
 using HarmonyLib;
@@ -40,7 +41,7 @@ public static class Utils
 
         if (result == null)
         {
-            throw new RepoStaticInstanceNullException(typeof(RunManager));
+            throw new RepoSingletonNullException(typeof(RunManager));
         }
 
         return result;
@@ -52,10 +53,30 @@ public static class Utils
 
         if (result == null)
         {
-            throw new RepoStaticInstanceNullException(typeof(GameDirector));
+            throw new RepoSingletonNullException(typeof(GameDirector));
         }
 
         return result;
+    }
+
+    public static bool IsExtractionLevelRunning()
+    {
+        try
+        {
+            RunManager runManager = GetRunManager();
+
+            Level level = runManager.levelCurrent;
+
+            List<Level> nonExtractionLevels = new List<Level>() {runManager.levelArena, runManager.levelLobby, runManager.levelLobbyMenu,
+             runManager.levelMainMenu, runManager.levelRecording, runManager.levelShop, runManager.levelSplashScreen, runManager.levelTutorial};
+
+            return level != null && !nonExtractionLevels.Contains(level);
+        }
+        catch (RepoSingletonNullException e)
+        {
+            _logger.LogWarning(string.Format("Could not determine if an extraction level is running due to the following exception: {0}", e.Message));
+            return false;
+        }
     }
 
     [HarmonyPatch(typeof(RunManager), nameof(RunManager.SetRunLevel))]
@@ -70,21 +91,22 @@ public static class Utils
         }
     }
 
-    // TODO: Add "valuable not registered" exception.
     public static void SpawnModValuable(ModValuableRegistry registry, ModValuableRegistry.ValuableAddition valuable)
     {
-        GameDirector director;
+        // Check to make sure that an extraction level has been started.
+        if (!IsExtractionLevelRunning())
+        {
+            throw new RepoInvalidActionException(action: string.Format("spawn the following custom valuable: {0}", registry.GetRegistryName(valuable)), reason: "an extraction level is not running");
+        }
 
+        GameDirector director;
         try
         {
             director = GetGameDirector();
-            if (director != null)
-            {
-                Transform playerTransform = director.PlayerList[0].gameObject.transform;
-                UnityEngine.Object.Instantiate(registry.GetRegistryEntry(valuable).Item1, playerTransform.position, playerTransform.rotation);
-            }
+            Transform playerTransform = director.PlayerList[0].gameObject.transform;
+            UnityEngine.Object.Instantiate(registry.GetRegistryEntry(valuable).Item1, playerTransform.position, playerTransform.rotation);
         }
-        catch (RepoStaticInstanceNullException e)
+        catch (RepoSingletonNullException e)
         {
             _logger.LogWarning(string.Format("Could not spawn {0} due to the following exception: {1}", valuable.AssetName, e.Message));
         }
