@@ -1,6 +1,6 @@
 namespace Cerveza_Cristal;
 
-interface IModRegistry
+public interface IModRegistry
 {
     void ApplyAdditionRegistrations(RunManager runManager);
 }
