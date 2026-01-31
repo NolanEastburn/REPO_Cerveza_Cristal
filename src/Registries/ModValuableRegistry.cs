@@ -19,7 +19,6 @@ public class ModValuableRegistry : ModRegistry<ValuableAddition>
     }
 
 
-
     public ModValuableRegistry(AssetBundle assetBundle, ManualLogSource logger) : base(assetBundle, logger) { }
 
     public override void ApplyAdditionRegistrations(RunManager runManager)
@@ -28,7 +27,7 @@ public class ModValuableRegistry : ModRegistry<ValuableAddition>
         {
             foreach (LevelValuables lv in level.ValuablePresets)
             {
-                foreach ((GameObject, ValuableAddition) regEntry in Registry.Values)
+                foreach ((GameObject, ValuableAddition) regEntry in RegistryDictionary.Values)
                 {
                     PrefabRef prefabRef = CreatePrefabRef(regEntry);
 

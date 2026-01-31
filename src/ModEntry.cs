@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
-using System.Xml.Serialization;
 using BepInEx;
 using BepInEx.Logging;
 using HarmonyLib;
@@ -45,7 +44,7 @@ public class ModEntry : BaseUnityPlugin
 
             if (singleplayerPool != null)
             {
-                foreach ((GameObject, ModValuableRegistry.Data) regEntry in _modValuableRegistry.GetRegistry().Values)
+                foreach ((GameObject, ValuableAddition) regEntry in _modValuableRegistry.RegistryDictionary.Values)
                 {
                     singleplayerPool.Add(_modValuableRegistry.GetRegistryName(regEntry.Item2), regEntry.Item1);
                 }
@@ -91,7 +90,7 @@ public class ModEntry : BaseUnityPlugin
             _modValuableRegistry = new ModValuableRegistry(assetBundle, Logger);
 
             // Register each valuable
-            foreach (ModValuableRegistry.ValuableAddition addition in ModValuables.ValuableAdditions)
+            foreach (ValuableAddition addition in ModValuables.ValuableAdditions)
             {
                 _modValuableRegistry.Register(addition);
             }

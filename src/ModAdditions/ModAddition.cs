@@ -1,7 +1,8 @@
 namespace Cerveza_Cristal;
 
-using BepInEx.Logging;
 using System.Collections.Generic;
+using BepInEx.Logging;
+using UnityEngine;
 
 
 public abstract class ModAddition
@@ -12,7 +13,7 @@ public abstract class ModAddition
 
     protected List<System.Type> _additionalComponents { get; set; }
 
-    public abstract void Register<T>(ModRegistry<T> registry) where T : ModAddition;
+    public abstract GameObject CreateGameObject(AssetBundle assetBundle);
 
     public ModAddition(string assetName, string name, ManualLogSource logger, List<System.Type> additionalComponents = null)
     {

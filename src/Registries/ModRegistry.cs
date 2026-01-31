@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using BepInEx.Logging;
 using UnityEngine;
 
-public abstract class ModRegistry<T> where T : ModAddition
+public abstract class ModRegistry<T> : IModRegistry where T : ModAddition
 {
-    public Dictionary<string, (GameObject, T)> Registry { get; private set; } = null;
+    public Dictionary<string, (GameObject, T)> RegistryDictionary { get; private set; } = null;
 
     public AssetBundle TheAssetBundle { get; private set; }
 
@@ -17,18 +17,27 @@ public abstract class ModRegistry<T> where T : ModAddition
         TheAssetBundle = assetBundle;
         _logger = logger;
 
-        Registry = new Dictionary<string, (GameObject, T)>();
+        RegistryDictionary = new Dictionary<string, (GameObject, T)>();
     }
 
+    public void Register(T addition)
+    {
+        GameObject go = addition.CreateGameObject(TheAssetBundle);
+
+        if (go != null)
+        {
+            RegistryDictionary.Add(GetRegistryName(addition), (go, addition));
+        }
+    }
 
     public (GameObject, T) GetRegistryEntry(T addition)
     {
-        return Registry[GetRegistryName(addition)];
+        return RegistryDictionary[GetRegistryName(addition)];
     }
 
     public (GameObject, T) GetRegistryEntry(string key)
     {
-        return Registry[key];
+        return RegistryDictionary[key];
     }
 
     public abstract void ApplyAdditionRegistrations(RunManager runManager);

@@ -91,7 +91,7 @@ public static class Utils
         }
     }
 
-    public static void SpawnModValuable(ModValuableRegistry registry, ModValuableRegistry.ValuableAddition valuable)
+    public static void SpawnModValuable(ModValuableRegistry registry, ValuableAddition valuable)
     {
         // Check to make sure that an extraction level has been started.
         if (!IsExtractionLevelRunning())

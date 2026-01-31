@@ -72,9 +72,9 @@ public class ValuableAddition : ModAddition
         ValuableData = valuableData;
     }
 
-    public override void Register<ValuableAddition>(ModRegistry<ValuableAddition> registry)
+    public override GameObject CreateGameObject(AssetBundle assetBundle)
     {
-        GameObject go = registry.TheAssetBundle.LoadAsset<GameObject>(AssetName);
+        GameObject go = assetBundle.LoadAsset<GameObject>(AssetName);
 
         if (go != null)
         {
@@ -125,11 +125,12 @@ public class ValuableAddition : ModAddition
                 }
             }
 
-            registry.Registry.Add(registry.GetRegistryName(this), (go, this));
+            return go;
         }
         else
         {
-            _logger.LogError("Could not register GameObject " + AssetName + " as it does not exist in the asset bundle!");
+            _logger.LogError("Could not create a GameObject of " + AssetName + " as it does not exist in the asset bundle!");
+            return null;
         }
     }
 
