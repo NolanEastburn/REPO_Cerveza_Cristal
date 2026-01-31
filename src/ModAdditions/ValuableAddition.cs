@@ -5,7 +5,7 @@ using BepInEx.Logging;
 using Photon.Pun;
 using UnityEngine;
 
-public class ValuableAddition
+public class ValuableAddition : ModAddition
 {
 
     class DefaultBehaviour : MonoBehaviour
@@ -21,11 +21,8 @@ public class ValuableAddition
         }
     }
 
-    private ManualLogSource _logger { get; set; }
-    private string _assetName { get; set; }
-
     public Data ValuableData { get; private set; }
-    public List<System.Type> AdditionalComponents { get; private set; }
+
 
     public struct Data
     {
@@ -37,8 +34,6 @@ public class ValuableAddition
         private const float DEFAULT_MASS = 1.0f;
 
         private static readonly ValuableVolume.Type DEFAULT_VALUABLE_VOLUME_TYPE = ValuableVolume.Type.Medium;
-
-        public string Name { get; set; }
         public (float, float) Value { get; set; }
         public float Durability { get; set; }
         public float Fragility { get; set; }
@@ -46,10 +41,9 @@ public class ValuableAddition
         public ValuableVolume.Type ValuableVolumeType { get; set; }
         public Gradient ParticleGradient { get; set; }
 
-        public Data(string name, (float, float)? value = null, float mass = DEFAULT_MASS,
+        public Data((float, float)? value = null, float mass = DEFAULT_MASS,
          ValuableVolume.Type? valuableVolumeType = null, Gradient particleGraident = null, float durability = DEFAULT_DURABILITY, float fragility = DEFAULT_FRAGILITY)
         {
-            Name = name;
             Value = value ?? DEFAULT_VALUE;
             Durability = durability;
             Fragility = fragility;
@@ -73,17 +67,14 @@ public class ValuableAddition
 
     }
 
-    public ValuableAddition(string assetName, Data valuableData, ManualLogSource logger,, List<System.Type> additionalComponents = null)
+    public ValuableAddition(string assetName, string name, Data valuableData, ManualLogSource logger, List<System.Type> additionalComponents = null) : base(assetName, name, logger, additionalComponents)
     {
-        _assetName = assetName;
-        _logger = logger;
         ValuableData = valuableData;
-        AdditionalComponents = additionalComponents;
     }
 
-    public void Register(IModRegistry registry)
+    public override void Register<ValuableAddition>(ModRegistry<ValuableAddition> registry)
     {
-        GameObject go = assetBundle.LoadAsset<GameObject>(_assetName);
+        GameObject go = registry.TheAssetBundle.LoadAsset<GameObject>(AssetName);
 
         if (go != null)
         {
@@ -99,7 +90,7 @@ public class ValuableAddition
 
             if (!go.GetComponent<Collider>())
             {
-                _logger.LogWarning(ValuableData.Name + " does not have a collider! Adding a BoxCollider!");
+                _logger.LogWarning(Name + " does not have a collider! Adding a BoxCollider!");
                 BoxCollider bc = go.AddComponent(typeof(BoxCollider)) as BoxCollider;
             }
 
@@ -120,25 +111,26 @@ public class ValuableAddition
             v.durabilityPreset = ScriptableObject.CreateInstance(typeof(Durability)) as Durability;
 
             go.tag = "Phys Grab Object";
-            go.name = ValuableData.Name;
+            go.name = Name;
 
             // Put the game object on the PhysGrabObject layer.
             // Many raycasts will not happen if the layer is not correct.
             go.layer = LayerMask.NameToLayer("PhysGrabObject");
 
-            if (AdditionalComponents != null)
+            if (_additionalComponents != null)
             {
-                foreach (System.Type c in AdditionalComponents)
+                foreach (System.Type c in _additionalComponents)
                 {
                     go.AddComponent(c);
                 }
             }
 
-            _registry.Add(GetRegistryName(ValuableData), (go, ValuableData));
+            registry.Registry.Add(registry.GetRegistryName(this), (go, this));
         }
         else
         {
-            _logger.LogError("Could not register GameObject " + addition.AssetName + " as it does not exist in the asset bundle!");
+            _logger.LogError("Could not register GameObject " + AssetName + " as it does not exist in the asset bundle!");
         }
     }
+
 }

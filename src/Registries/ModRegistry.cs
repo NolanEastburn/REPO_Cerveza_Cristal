@@ -4,35 +4,31 @@ using System.Collections.Generic;
 using BepInEx.Logging;
 using UnityEngine;
 
-public abstract class ModRegistry<T> : IModRegistry where T : IAddition
+public abstract class ModRegistry<T> where T : ModAddition
 {
-    private Dictionary<string, (GameObject, T)> _registry { get; set; } = null;
+    public Dictionary<string, (GameObject, T)> Registry { get; private set; } = null;
 
-    private AssetBundle _assetBundle { get; set; }
+    public AssetBundle TheAssetBundle { get; private set; }
 
     private ManualLogSource _logger { get; set; }
 
     public ModRegistry(AssetBundle assetBundle, ManualLogSource logger)
     {
-        _assetBundle = assetBundle;
+        TheAssetBundle = assetBundle;
         _logger = logger;
 
-        _registry = new Dictionary<string, (GameObject, T)>();
+        Registry = new Dictionary<string, (GameObject, T)>();
     }
 
-    public Dictionary<string, (GameObject, T)> GetRegistry()
-    {
-        return _registry;
-    }
 
     public (GameObject, T) GetRegistryEntry(T addition)
     {
-        return _registry[GetRegistryName(addition)];
+        return Registry[GetRegistryName(addition)];
     }
 
     public (GameObject, T) GetRegistryEntry(string key)
     {
-        return _registry[key];
+        return Registry[key];
     }
 
     public abstract void ApplyAdditionRegistrations(RunManager runManager);
@@ -42,7 +38,7 @@ public abstract class ModRegistry<T> : IModRegistry where T : IAddition
 
     public string GetRegistryName(T addition)
     {
-        return _assetBundle.name + "." + addition.GetName();
+        return TheAssetBundle.name + "." + addition.Name;
     }
 
 }
