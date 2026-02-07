@@ -72,6 +72,8 @@ public class ModEntry : BaseUnityPlugin
         Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
     }
 
+    private bool _insertPressed = false;
+
     private void Update()
     {
         if (!assetBundlesLoaded && !_failedToLoadAssetBundle)
@@ -108,7 +110,7 @@ public class ModEntry : BaseUnityPlugin
                 runManager = Utils.GetRunManager();
 
                 Utils.SetLogger(Logger);
-                Utils.SelectLevel(Utils.LevelTypes.MANOR);
+                Utils.SelectLevel(Utils.LevelTypes.ARCTIC);
 
                 // Harmony test
                 HarmonyFileLog.Enabled = true;
@@ -144,6 +146,18 @@ public class ModEntry : BaseUnityPlugin
             {
                 Logger.LogWarning(string.Format("Could not spawn the bottle because of the following exception: {0}", e.Message));
             }
+        }
+
+        if (Input.GetKey(KeyCode.Insert) && !_insertPressed)
+        {
+            _insertPressed = true;
+
+            List<ValuableVolume> fridges = Utils.GetLevelValuableVolumesByName("Kitchen Fridge");
+            Logger.LogInfo(string.Format("Fridge Count: {0}", fridges.Count));
+        }
+        else if (!Input.GetKey(KeyCode.Insert) && _insertPressed)
+        {
+            _insertPressed = false;
         }
     }
 }

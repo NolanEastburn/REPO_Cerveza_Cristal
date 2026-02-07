@@ -107,7 +107,7 @@ public static class Utils
     }
 
     // Uses the name of the Transform component for the name.
-    public static List<ValuableVolume> GetLevelValuableVolumes(string valuableVolumeName)
+    public static List<ValuableVolume> GetLevelValuableVolumesByName(string valuableVolumeName)
     {
         List<ValuableVolume> result = new List<ValuableVolume>();
 
@@ -151,15 +151,18 @@ public static class Utils
 
             foreach (ValuableVolume v in masterVolumeList)
             {
-                if (v.transform.name == valuableVolumeName)
+                if (v != null)
                 {
-                    result.Add(v);
+                    if (v.GetComponent<Transform>().name == valuableVolumeName)
+                    {
+                        result.Add(v);
+                    }
                 }
             }
         }
         catch (RepoSingletonNullException e)
         {
-            _logger.LogWarning(string.Format("Could not get the valuable volumes for the level because of the following exception: %s", e.Message));
+            _logger.LogWarning(string.Format("Could not get the valuable volumes for the level because of the following exception: {0}", e.Message));
             return result;
         }
 
