@@ -115,7 +115,7 @@ public class ValuableAddition : ModAddition
 
             // Put the game object on the PhysGrabObject layer.
             // Many raycasts will not happen if the layer is not correct.
-            go.layer = LayerMask.NameToLayer("PhysGrabObject");
+            go.layer = Utils.VALUABLE_LAYER_MASK;
 
             if (_additionalComponents != null)
             {
