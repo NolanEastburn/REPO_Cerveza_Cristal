@@ -108,7 +108,6 @@ public class ValuableAddition : ModAddition
             v.physAttributePreset = ScriptableObject.CreateInstance(typeof(PhysAttribute)) as PhysAttribute;
             v.physAttributePreset.mass = ValuableData.Mass;
             v.volumeType = ValuableData.ValuableVolumeType;
-            v.durabilityPreset = ScriptableObject.CreateInstance(typeof(Durability)) as Durability;
 
             go.tag = "Phys Grab Object";
             go.name = Name;

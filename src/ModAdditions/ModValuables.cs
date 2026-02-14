@@ -9,7 +9,7 @@ public static class ModValuables
     new ValuableAddition(assetName: "bottle_prefab", name: "Cerveza Cristal Bottle", logger: ModEntry.Logger, valuableData: new ValuableAddition.Data
     (
         value: (1000, 3000),
-        mass: 0.25f,
+        mass: 0.5f,
         ValuableVolume.Type.Small,
         durability: 5.0f,
         fragility: 80.0f

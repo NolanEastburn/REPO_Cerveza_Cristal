@@ -152,8 +152,14 @@ public class ModEntry : BaseUnityPlugin
         {
             _insertPressed = true;
 
-            List<ValuableVolume> fridges = Utils.GetLevelValuableVolumesByName("Kitchen Fridge");
-            Logger.LogInfo(string.Format("Fridge Count: {0}", fridges.Count));
+            List<GameObject> fridges = Utils.GetLevelGameObjectsByName("Kitchen Fridge");
+            foreach (GameObject fridge in fridges)
+            {
+                foreach (ValuableObject v in Utils.ContainedValuables(fridge))
+                {
+                    Logger.LogInfo(string.Format("Found the following ValuableObject in the fridge: {0}", v.gameObject.name));
+                }
+            }
         }
         else if (!Input.GetKey(KeyCode.Insert) && _insertPressed)
         {
