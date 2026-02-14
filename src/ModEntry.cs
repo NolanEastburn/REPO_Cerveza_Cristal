@@ -25,37 +25,21 @@ public class ModEntry : BaseUnityPlugin
 
     private bool _failedToLoadAssetBundle = false;
 
+    private ModPatches _patches { get; set; } = null;
+
+    // Static variables
     private static string pluginRoot = Path.Combine(Paths.BepInExRootPath, "plugins");
 
     private static string assetBundlePath = Path.Combine(pluginRoot, MOD_CONTENT_FOLDER, RESOURCES_FOLDER, "AssetBundles", "primaryassetbundle");
 
-    private static ModValuableRegistry _modValuableRegistry { get; set; }
+    public static ModValuableRegistry ModValuableRegistry { get; set; }
 
-    private static List<IModRegistry> _modRegistries { get; set; } = new List<IModRegistry>();
+    public static List<IModRegistry> ModRegistries { get; set; } = new List<IModRegistry>();
 
-    private static IPunPrefabPool _multiplayerPool { get; set; } = null;
+    public static IPunPrefabPool MultiplayerPool { get; set; } = null;
 
-    [HarmonyPatch(typeof(LevelGenerator), "Start")]
-    class ModAssetRestorePatch
-    {
-        static void Postfix()
-        {
-            Dictionary<string, GameObject> singleplayerPool = GetSingleplayerPool();
 
-            if (singleplayerPool != null)
-            {
-                foreach ((GameObject, ValuableAddition) regEntry in _modValuableRegistry.RegistryDictionary.Values)
-                {
-                    singleplayerPool.Add(_modValuableRegistry.GetRegistryName(regEntry.Item2), regEntry.Item1);
-                }
-            }
-
-            // Reset the multiplayer pool.
-            PhotonNetwork.PrefabPool = _multiplayerPool;
-        }
-    }
-
-    private static Dictionary<string, GameObject> GetSingleplayerPool()
+    public static Dictionary<string, GameObject> GetSingleplayerPool()
     {
         // Register it in the singleplayer pool
         RunManager rmInstance = RunManager.instance;
@@ -89,16 +73,16 @@ public class ModEntry : BaseUnityPlugin
             }
 
             // Create the valuables registry
-            _modValuableRegistry = new ModValuableRegistry(assetBundle, Logger);
+            ModValuableRegistry = new ModValuableRegistry(assetBundle, Logger);
 
             // Register each valuable
             foreach (ValuableAddition addition in ModValuables.ValuableAdditions)
             {
-                _modValuableRegistry.Register(addition);
+                ModValuableRegistry.Register(addition);
             }
 
             // Add the ValuableRegistry to the list of registries.
-            _modRegistries.Add(_modValuableRegistry);
+            ModRegistries.Add(ModValuableRegistry);
 
             assetBundlesLoaded = true;
         }
@@ -110,20 +94,17 @@ public class ModEntry : BaseUnityPlugin
                 runManager = Utils.GetRunManager();
 
                 Utils.SetLogger(Logger);
-                Utils.SelectLevel(Utils.LevelTypes.ARCTIC);
 
-                // Harmony test
-                HarmonyFileLog.Enabled = true;
-                Harmony harmony = new Harmony(Utils.UNIQUE_ORG_STRING);
+                ModPatches.Instance.Logger = Logger;
+                ModPatches.Instance.SelectedLevel = LevelTypes.ARCTIC;
+                ModPatches.Instance.ApplyPatches();
 
-                harmony.PatchAll();
-
-                foreach (IModRegistry registry in _modRegistries)
+                foreach (IModRegistry registry in ModRegistries)
                 {
                     registry.ApplyAdditionRegistrations(RunManager.instance);
                 }
 
-                _multiplayerPool = new ModPrefabPool(_modValuableRegistry, Logger);
+                MultiplayerPool = new ModPrefabPool(ModValuableRegistry, Logger);
 
                 additionsRegistered = true;
 
@@ -140,7 +121,7 @@ public class ModEntry : BaseUnityPlugin
         {
             try
             {
-                Utils.SpawnModValuable(_modValuableRegistry, ModValuables.BOTTLE);
+                Utils.SpawnModValuable(ModValuableRegistry, ModValuables.BOTTLE);
             }
             catch (RepoInvalidActionException e)
             {
