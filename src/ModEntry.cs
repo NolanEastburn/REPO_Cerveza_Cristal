@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using BepInEx;
 using BepInEx.Logging;
-using HarmonyLib;
-using HarmonyLib.Tools;
 using Photon.Pun;
 using UnityEngine;
 
@@ -14,7 +11,15 @@ namespace Cerveza_Cristal;
 [BepInPlugin(MyPluginInfo.PLUGIN_GUID, MyPluginInfo.PLUGIN_NAME, MyPluginInfo.PLUGIN_VERSION)]
 public class ModEntry : BaseUnityPlugin
 {
-    internal static new ManualLogSource Logger = null;
+    // Static strings
+    private static string pluginRoot = Path.Combine(Paths.BepInExRootPath, "plugins");
+
+    private static string assetBundlePath = Path.Combine(pluginRoot, MOD_CONTENT_FOLDER, RESOURCES_FOLDER, "AssetBundles", "primaryassetbundle");
+
+    // Singleton instance
+    public static ModEntry Instance { get; private set; } = null;
+
+    public new ManualLogSource Logger { get; private set; } = null;
 
     private const string MOD_CONTENT_FOLDER = "nooterdooter_cerveza_cristal";
     private const string RESOURCES_FOLDER = "res";
@@ -27,16 +32,11 @@ public class ModEntry : BaseUnityPlugin
 
     private ModPatches _patches { get; set; } = null;
 
-    // Static variables
-    private static string pluginRoot = Path.Combine(Paths.BepInExRootPath, "plugins");
+    public ModValuableRegistry ModValuableRegistry { get; set; }
 
-    private static string assetBundlePath = Path.Combine(pluginRoot, MOD_CONTENT_FOLDER, RESOURCES_FOLDER, "AssetBundles", "primaryassetbundle");
+    public List<IModRegistry> ModRegistries { get; set; } = new List<IModRegistry>();
 
-    public static ModValuableRegistry ModValuableRegistry { get; set; }
-
-    public static List<IModRegistry> ModRegistries { get; set; } = new List<IModRegistry>();
-
-    public static IPunPrefabPool MultiplayerPool { get; set; } = null;
+    public IPunPrefabPool MultiplayerPool { get; set; } = null;
 
 
     public static Dictionary<string, GameObject> GetSingleplayerPool()
@@ -50,9 +50,10 @@ public class ModEntry : BaseUnityPlugin
 
     private void Awake()
     {
+        Instance = this;
+        Logger = base.Logger;
 
         // Plugin startup logic
-        Logger = base.Logger;
         Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
     }
 

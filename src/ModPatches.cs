@@ -46,14 +46,14 @@ public sealed class ModPatches
 
             if (singleplayerPool != null)
             {
-                foreach ((GameObject, ValuableAddition) regEntry in ModEntry.ModValuableRegistry.RegistryDictionary.Values)
+                foreach ((GameObject, ValuableAddition) regEntry in ModEntry.Instance.ModValuableRegistry.RegistryDictionary.Values)
                 {
-                    singleplayerPool.Add(ModEntry.ModValuableRegistry.GetRegistryName(regEntry.Item2), regEntry.Item1);
+                    singleplayerPool.Add(ModEntry.Instance.ModValuableRegistry.GetRegistryName(regEntry.Item2), regEntry.Item1);
                 }
             }
 
             // Reset the multiplayer pool.
-            PhotonNetwork.PrefabPool = ModEntry.MultiplayerPool;
+            PhotonNetwork.PrefabPool = ModEntry.Instance.MultiplayerPool;
         }
     }
 

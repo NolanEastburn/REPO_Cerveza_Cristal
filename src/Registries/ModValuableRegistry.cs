@@ -13,7 +13,7 @@ public class ModValuableRegistry : ModRegistry<ValuableAddition>
 
         private void Awake()
         {
-            _logger = ModEntry.Logger;
+            _logger = ModEntry.Instance.Logger;
             _logger.LogInfo("Spawned " + gameObject.name + " into the world!");
         }
     }
