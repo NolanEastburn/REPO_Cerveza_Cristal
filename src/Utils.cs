@@ -23,6 +23,32 @@ namespace Cerveza_Cristal
         private static ManualLogSource _logger { get; set; } = null;
 
 
+        public static string LevelTypeString(LevelTypes levelType)
+        {
+            string result = "Level - ";
+
+            switch (levelType)
+            {
+                case LevelTypes.ARCTIC:
+                    result += "Arctic";
+                    break;
+                case LevelTypes.MANOR:
+                    result += "Manor";
+                    break;
+                case LevelTypes.WIZARD:
+                    result += "Wizard";
+                    break;
+                case LevelTypes.MUSEUM:
+                    result += "Museum";
+                    break;
+                default:
+                    result += "NON-EXTRACTION LEVEL";
+                    break;
+            }
+
+            return result;
+        }
+
         public static void SetLogger(ManualLogSource logger)
         {
             _logger = logger;
@@ -84,6 +110,11 @@ namespace Cerveza_Cristal
             }
         }
 
+        public static List<GameObject> GetLevelModValuableInstances(ValuableAddition addition)
+        {
+            return GetLevelGameObjectsByName(addition.Name);
+        }
+
         public static List<GameObject> GetLevelGameObjectsByName(string moduleName)
         {
             List<GameObject> result = new List<GameObject>();
@@ -97,7 +128,7 @@ namespace Cerveza_Cristal
 
             foreach (GameObject m in UnityEngine.Object.FindObjectsOfType<GameObject>(includeInactive: false))
             {
-                if (m.name.ToLower() == moduleName.ToLower())
+                if (m.name.ToLower().Contains(moduleName.ToLower()))
                 {
                     result.Add(m);
                 }
