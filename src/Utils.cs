@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using BepInEx.Logging;
 using UnityEngine;
 
@@ -139,15 +140,15 @@ namespace Cerveza_Cristal
 
         public static List<ValuableObject> ContainedValuables(GameObject volume)
         {
-            // Temporary map to make sure we don't count valuables twice.
-            Dictionary<string, ValuableObject> valuableDict = new Dictionary<string, ValuableObject>();
+            // Temporary HashSet to make sure we don't count valuables twice.
+            HashSet<ValuableObject> valuableHs = new HashSet<ValuableObject>();
 
             foreach (ValuableObject v in volume.gameObject.GetComponentsInChildren<ValuableObject>())
             {
-                valuableDict.Add(v.name, v);
+                valuableHs.Add(v);
             }
 
-            return new List<ValuableObject>(valuableDict.Values);
+            return new List<ValuableObject>(valuableHs.ToList<ValuableObject>());
         }
 
         // TODO: Get this working for multiplayer as well (not super important however)

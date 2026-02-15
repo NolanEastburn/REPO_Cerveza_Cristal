@@ -150,6 +150,7 @@ public sealed class ModPatches
                                 // Move to the fridge.
 
                                 // TODO: Add this!
+                                ModEntry.Instance.Logger.LogInfo("Attempted to move bottle to empty fridge!");
                             }
                             else
                             {
@@ -168,12 +169,19 @@ public sealed class ModPatches
                                             bottle.SetActive(false);
 
                                             Vector3 bottlePos = bottle.transform.position;
+                                            Vector3 valuablePos = v.gameObject.transform.position;
 
-                                            bottle.transform.position = v.gameObject.transform.position;
+                                            // Move both positions up a bit to stop intersections when swapping.
+                                            bottlePos.y += 0.5f;
+                                            valuablePos.y += 0.5f;
+
+                                            bottle.transform.position = valuablePos;
                                             v.gameObject.transform.position = bottlePos;
 
                                             v.gameObject.SetActive(true);
                                             bottle.SetActive(true);
+
+                                            ModEntry.Instance.Logger.LogInfo(string.Format("Swapped the bottle with a {0}", v.name));
 
                                             break;
                                         }
@@ -190,6 +198,8 @@ public sealed class ModPatches
                                 {
                                     // TODO: Reduce target by the bottle's worth
                                     UnityEngine.Object.Destroy(bottle);
+
+                                    ModEntry.Instance.Logger.LogInfo("Destroyed bottle because all fridges have bottles already!");
                                 }
                             }
 
@@ -199,6 +209,8 @@ public sealed class ModPatches
                         {
                             // TODO: Reduce target by the bottle's worth.
                             UnityEngine.Object.Destroy(bottle);
+
+                            ModEntry.Instance.Logger.LogInfo("Destroyed bottle because no fridges are in the map :(");
                         }
                     }
                 }
