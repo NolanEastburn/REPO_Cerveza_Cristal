@@ -1,6 +1,7 @@
 namespace Cerveza_Cristal;
 
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using BepInEx.Logging;
 using Photon.Pun;
 using UnityEngine;
@@ -42,7 +43,7 @@ public class ValuableAddition : ModAddition
         public Gradient ParticleGradient { get; set; }
 
         public Data((float, float)? value = null, float mass = DEFAULT_MASS,
-         ValuableVolume.Type? valuableVolumeType = null, Gradient particleGraident = null, float durability = DEFAULT_DURABILITY, float fragility = DEFAULT_FRAGILITY)
+         ValuableVolume.Type? valuableVolumeType = null, Gradient particleGradient = null, float durability = DEFAULT_DURABILITY, float fragility = DEFAULT_FRAGILITY)
         {
             Value = value ?? DEFAULT_VALUE;
             Durability = durability;
@@ -50,7 +51,7 @@ public class ValuableAddition : ModAddition
             Mass = mass;
             ValuableVolumeType = valuableVolumeType ?? DEFAULT_VALUABLE_VOLUME_TYPE;
 
-            if (particleGraident == null)
+            if (particleGradient == null)
             {
                 // Default
                 ParticleGradient = new Gradient();
@@ -61,7 +62,7 @@ public class ValuableAddition : ModAddition
             }
             else
             {
-                ParticleGradient = particleGraident;
+                ParticleGradient = particleGradient;
             }
         }
 
@@ -74,29 +75,92 @@ public class ValuableAddition : ModAddition
 
     public override GameObject CreateGameObject(AssetBundle assetBundle)
     {
-        GameObject go = assetBundle.LoadAsset<GameObject>(AssetName);
+        /* 
+            Valuable hierarchy:
+            Root (PhotonView, ValuableObject, PhysGrabObjectImpactDetector, RoomVolumeCheck, PhysGrabObject, RigidBody, PhotonTransformView, PhysGrabObject layer)
+                Object
+                    Mesh (Contains mesh)
+                    Valuable Collider (Collider, PhysGrabObject<Collider Type>Collider, PhysGrabObjectCollider)
+                    Valuable Collider (1)
+                    ...
+        */
 
-        if (go != null)
+        // Besides the collider GameObjects, this hierarchy should be present from the PreFab in the AssetBundle.
+
+        GameObject root = assetBundle.LoadAsset<GameObject>(AssetName);
+
+        if (root != null)
         {
 
             // Add components
-            go.AddComponent(typeof(PhotonTransformView));
-            go.AddComponent(typeof(PhysGrabObject));
-            go.AddComponent(typeof(RoomVolumeCheck));
-            go.AddComponent(typeof(Rigidbody));
-            go.AddComponent(typeof(PhysGrabObjectImpactDetector));
-            go.AddComponent(typeof(PhotonView));
-            go.AddComponent(typeof(DefaultBehaviour));
+            root.AddComponent(typeof(PhotonTransformView));
+            root.AddComponent(typeof(PhysGrabObject));
+            root.AddComponent(typeof(RoomVolumeCheck));
+            root.AddComponent(typeof(Rigidbody));
+            root.AddComponent(typeof(PhysGrabObjectImpactDetector));
+            root.AddComponent(typeof(PhotonView));
+            root.AddComponent(typeof(DefaultBehaviour));
 
-            if (!go.GetComponent<Collider>())
+            // Get the "Object" GameObject (first child of the root)
+            GameObject obj = root.transform.GetChild(0).gameObject;
+
+            if (obj.GetComponentsInChildren<Collider>().Length == 0)
             {
                 _logger.LogWarning(Name + " does not have a collider! Adding a BoxCollider!");
-                BoxCollider bc = go.AddComponent(typeof(BoxCollider)) as BoxCollider;
+                GameObject boxColliderGo = new GameObject("Valuable Collider");
+                boxColliderGo.AddComponent(typeof(BoxCollider));
+                boxColliderGo.AddComponent(typeof(PhysGrabObjectBoxCollider));
+                boxColliderGo.AddComponent(typeof(PhysGrabObjectCollider));
+                boxColliderGo.layer = Utils.VALUABLE_LAYER_MASK;
             }
 
-            go.AddComponent(typeof(PhysGrabObjectCollider));
+            // Add the PhysGrabObjectColliders to each Valuable Collider GameObject.
+            for (int i = 0; i < obj.transform.childCount; ++i)
+            {
+                GameObject colliderGo = obj.transform.GetChild(i).gameObject;
 
-            ValuableObject v = go.AddComponent(typeof(ValuableObject)) as ValuableObject;
+                // Skip if contains no colliders. Only process a single collider as each GameObject should have a single collider per the observed
+                // REPO Valuable hierarchy.
+                if (colliderGo.GetComponent<Collider>())
+                {
+                    // 4 supported colliders, Box, Sphere, Mesh, and Capsule
+                    if (colliderGo.GetComponent<BoxCollider>())
+                    {
+                        colliderGo.AddComponent(typeof(PhysGrabObjectBoxCollider));
+                    }
+                    else if (colliderGo.GetComponent<SphereCollider>())
+                    {
+                        colliderGo.AddComponent(typeof(PhysGrabObjectSphereCollider));
+                    }
+                    else if (colliderGo.GetComponent<PhysGrabObjectMeshCollider>())
+                    {
+                        colliderGo.AddComponent(typeof(PhysGrabObjectMeshCollider));
+                    }
+                    else if (colliderGo.GetComponent<PhysGrabObjectCapsuleCollider>())
+                    {
+                        colliderGo.AddComponent(typeof(PhysGrabObjectCapsuleCollider));
+                    }
+
+                    // Always add the PhysGrabObjectCollider
+                    colliderGo.AddComponent(typeof(PhysGrabObjectCollider));
+
+                    // Assign correct layer number.
+                    colliderGo.layer = Utils.VALUABLE_LAYER_MASK;
+                    colliderGo.tag = "Phys Grab Object";
+
+                    // Copy REPO material values
+                    Collider c = colliderGo.GetComponent<Collider>();
+                    c.material.bounciness = 0.3f;
+                    c.material.dynamicFriction = 0.25f;
+                    c.material.staticFriction = 0.05f;
+
+                    c.sharedMaterial.bounciness = c.material.bounciness;
+                    c.sharedMaterial.dynamicFriction = c.material.dynamicFriction;
+                    c.sharedMaterial.staticFriction = c.sharedMaterial.staticFriction;
+                }
+            }
+
+            ValuableObject v = root.AddComponent(typeof(ValuableObject)) as ValuableObject;
             v.valuePreset = ScriptableObject.CreateInstance(typeof(Value)) as Value;
             v.valuePreset.valueMin = ValuableData.Value.Item1;
             v.valuePreset.valueMax = ValuableData.Value.Item2;
@@ -109,22 +173,23 @@ public class ValuableAddition : ModAddition
             v.physAttributePreset.mass = ValuableData.Mass;
             v.volumeType = ValuableData.ValuableVolumeType;
 
-            go.tag = "Phys Grab Object";
-            go.name = Name;
+            root.tag = "Phys Grab Object";
+            root.name = Name;
 
             // Put the game object on the PhysGrabObject layer.
             // Many raycasts will not happen if the layer is not correct.
-            go.layer = Utils.VALUABLE_LAYER_MASK;
+            root.layer = Utils.VALUABLE_LAYER_MASK;
+            obj.layer = Utils.VALUABLE_LAYER_MASK;
 
             if (_additionalComponents != null)
             {
                 foreach (System.Type c in _additionalComponents)
                 {
-                    go.AddComponent(c);
+                    root.AddComponent(c);
                 }
             }
 
-            return go;
+            return root;
         }
         else
         {

@@ -1,6 +1,7 @@
 {
     "editor.formatOnSave": true,
     "cSpell.words": [
+        "Behaviour",
         "Cervecerías",
         "Cerveza",
         "Compañía",
@@ -8,6 +9,8 @@
         "Cristla",
         "nooterdooter",
         "primaryassetbundle",
+        "Rigidbody",
+        "Scriptable",
         "singleplayer",
         "Unidas"
     ]

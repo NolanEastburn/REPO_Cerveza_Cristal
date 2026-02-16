@@ -15,5 +15,5 @@ public static class ModValuables
         fragility: 80.0f
     ));
 
-    public static ValuableAddition[] ValuableAdditions { get; private set; } = { TEST_VALUABLE, BOTTLE };
+    public static ValuableAddition[] ValuableAdditions { get; private set; } = { BOTTLE };
 }

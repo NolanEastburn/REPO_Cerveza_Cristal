@@ -69,7 +69,7 @@ public sealed class ModPatches
         }
     }
 
-    [HarmonyPatch(typeof(LevelGenerator), "GenerateDone")]
+    //[HarmonyPatch(typeof(LevelGenerator), "GenerateDone")]
     public static class BottleSpawnPatch
     {
         static void Postfix(LevelGenerator __instance)
@@ -197,6 +197,21 @@ public sealed class ModPatches
                                 if (hasBottle)
                                 {
                                     // TODO: Reduce target by the bottle's worth
+                                    ValuableDirector valuableDirector;
+
+                                    try
+                                    {
+                                        valuableDirector = Utils.GetValuableDirector();
+
+                                        // TODO: Use reflection to modify this value.
+                                        // Also put this into a Util function.
+
+                                    }
+                                    catch (RepoSingletonNullException e)
+                                    {
+                                        ModEntry.Instance.Logger.LogWarning(string.Format("Could not reduce total haul when removing a bottle because of the following exception: {0}", e.Message));
+                                    }
+
                                     UnityEngine.Object.Destroy(bottle);
 
                                     ModEntry.Instance.Logger.LogInfo("Destroyed bottle because all fridges have bottles already!");
