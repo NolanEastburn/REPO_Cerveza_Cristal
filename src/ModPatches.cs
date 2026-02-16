@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using BepInEx.Logging;
 using HarmonyLib;
 using HarmonyLib.Tools;
@@ -69,10 +70,49 @@ public sealed class ModPatches
         }
     }
 
-    //[HarmonyPatch(typeof(LevelGenerator), "GenerateDone")]
+    [HarmonyPatch(typeof(LevelGenerator), "GenerateDone")]
     public static class BottleSpawnPatch
     {
-        static void Postfix(LevelGenerator __instance)
+        // child should be inactive before this is called!
+        private static void ParentTo(GameObject child, GameObject parent)
+        {
+            // The GameObject that has the valuable as a child is either the root or a child GameObject.
+            GameObject valuableContainerGo = null;
+
+            if (parent.name.Contains("Valuable"))
+            {
+                valuableContainerGo = parent;
+            }
+            else
+            {
+                for (int i = 0; i < parent.transform.childCount; ++i)
+                {
+                    GameObject c = parent.transform.GetChild(i).gameObject;
+
+                    if (c.name.Contains("Valuable"))
+                    {
+                        valuableContainerGo = c;
+                        break;
+                    }
+                }
+            }
+
+            if (valuableContainerGo != null)
+            {
+                child.transform.SetParent(valuableContainerGo.transform);
+            }
+            else
+            {
+                ModEntry.Instance.Logger.LogWarning(string.Format("Could not parent {0} to {1} because {1} did not contain a GameObject called \"Valuable\"", child.name, parent.name));
+            }
+        }
+
+        static List<ValuableObject> SmallContainedValuables(GameObject volume)
+        {
+            return Utils.ContainedValuables(volume).Where(v => v.volumeType == ValuableVolume.Type.Small).ToList();
+        }
+
+        static void Postfix()
         {
             // Only run on an extraction level
             if (Utils.IsExtractionLevelRunning())
@@ -103,7 +143,7 @@ public sealed class ModPatches
 
                             foreach (GameObject fridge in fridges)
                             {
-                                foreach (ValuableObject valuable in Utils.ContainedValuables(fridge))
+                                foreach (ValuableObject valuable in SmallContainedValuables(fridge))
                                 {
                                     if (valuable.gameObject == bottle)
                                     {
@@ -136,11 +176,13 @@ public sealed class ModPatches
                             // Look for empty fridges first
 
                             bool aFridgeIsEmpty = false;
+                            GameObject emptyFridge = null;
                             foreach (GameObject fridge in fridges)
                             {
-                                if (Utils.ContainedValuables(fridge).Count == 0)
+                                if (SmallContainedValuables(fridge).Count == 0)
                                 {
                                     aFridgeIsEmpty = true;
+                                    emptyFridge = fridge;
                                     break;
                                 }
                             }
@@ -148,9 +190,15 @@ public sealed class ModPatches
                             if (aFridgeIsEmpty)
                             {
                                 // Move to the fridge.
+                                bottle.GetComponent<Rigidbody>().Sleep();
+                                bottle.SetActive(false);
+                                ParentTo(child: bottle, parent: emptyFridge);
+                                bottle.transform.localPosition = new Vector3(x: 0, y: 0, z: -0.2f);
+                                bottle.SetActive(true);
+                                bottle.GetComponent<Rigidbody>().isKinematic = false;
+                                bottle.GetComponent<Rigidbody>().WakeUp();
 
-                                // TODO: Add this!
-                                ModEntry.Instance.Logger.LogInfo("Attempted to move bottle to empty fridge!");
+                                ModEntry.Instance.Logger.LogInfo("Moved bottle to empty fridge!");
                             }
                             else
                             {
@@ -158,28 +206,38 @@ public sealed class ModPatches
                                 bool hasBottle = true;
                                 foreach (GameObject fridge in fridges)
                                 {
-                                    foreach (ValuableObject v in Utils.ContainedValuables(fridge))
+                                    foreach (ValuableObject v in SmallContainedValuables(fridge))
                                     {
                                         if (!v.gameObject.name.Contains(ModValuables.BOTTLE.Name))
                                         {
                                             hasBottle = false;
 
                                             // Swap the contained valuable with the bottle.
+
+                                            bottle.GetComponent<Rigidbody>().Sleep();
+                                            v.gameObject.GetComponent<Rigidbody>().Sleep();
+
+                                            GameObject currentBottleParent = bottle.transform.parent.gameObject;
+                                            GameObject currentSwapParent = v.gameObject.transform.parent.gameObject;
+                                            Vector3 bottleLocalPos = bottle.transform.localPosition;
+                                            Vector3 swapLocalPos = v.gameObject.transform.localPosition;
+
                                             v.gameObject.SetActive(false);
                                             bottle.SetActive(false);
 
-                                            Vector3 bottlePos = bottle.transform.position;
-                                            Vector3 valuablePos = v.gameObject.transform.position;
+                                            ParentTo(child: bottle, parent: currentSwapParent);
+                                            ParentTo(child: v.gameObject, parent: currentBottleParent);
 
-                                            // Move both positions up a bit to stop intersections when swapping.
-                                            bottlePos.y += 0.5f;
-                                            valuablePos.y += 0.5f;
-
-                                            bottle.transform.position = valuablePos;
-                                            v.gameObject.transform.position = bottlePos;
+                                            bottle.transform.localPosition = swapLocalPos;
+                                            v.gameObject.transform.localPosition = bottleLocalPos;
 
                                             v.gameObject.SetActive(true);
                                             bottle.SetActive(true);
+
+                                            v.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+                                            bottle.GetComponent<Rigidbody>().isKinematic = false;
+                                            v.gameObject.GetComponent<Rigidbody>().WakeUp();
+                                            bottle.GetComponent<Rigidbody>().WakeUp();
 
                                             ModEntry.Instance.Logger.LogInfo(string.Format("Swapped the bottle with a {0}", v.name));
 
