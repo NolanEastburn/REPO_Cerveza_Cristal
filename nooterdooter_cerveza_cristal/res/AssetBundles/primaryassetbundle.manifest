@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 3530030612
+CRC: 3979599745
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: cd4ae208ac7e4f1ac47330a235bd575d
+    Hash: 53678b4afd6546a11275037c0b3eca3f
   TypeTreeHash:
     serializedVersion: 2
     Hash: 0b57f674c07541440b80062ddecc5d89
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: cd4ae208ac7e4f1ac47330a235bd575d
+    Hash: 53678b4afd6546a11275037c0b3eca3f
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -32,6 +32,6 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/Cone.prefab
 - Assets/bottle_prefab.prefab
+- Assets/Cone.prefab
 Dependencies: []
