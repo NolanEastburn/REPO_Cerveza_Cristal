@@ -6,6 +6,7 @@ using HarmonyLib;
 using HarmonyLib.Tools;
 using Photon.Pun;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 namespace Cerveza_Cristal;
 
@@ -73,6 +74,62 @@ public sealed class ModPatches
     [HarmonyPatch(typeof(LevelGenerator), "GenerateDone")]
     public static class BottleSpawnPatch
     {
+
+        private static float AngleBetween(Vector2 a, Vector2 b)
+        {
+            // Get the angle between the vectors using the dot product.
+            // a * b = |a||b|cos(\theta)
+            // \theta = arccos(a * b / (|a||b|))
+            return (float)Math.Acos((double)Vector3.Dot(a, b) / (double)(a.magnitude * b.magnitude));
+        }
+
+        private static void PointBottleAtFridgeDoor(GameObject bottle, GameObject fridge)
+        {
+            // Find the fridge door.
+            GameObject door = null;
+
+            for (int i = 0; i < fridge.transform.childCount; ++i)
+            {
+                door = fridge.transform.GetChild(i).gameObject;
+                if (door.name == "Door02")
+                {
+                    break;
+                }
+                else
+                {
+                    door = null;
+                }
+            }
+
+            if (door == null)
+            {
+                ModEntry.Instance.Logger.LogWarning("Could not find the Door2 child in the fridge Game Object!");
+                return;
+            }
+
+            // Label and fridge door front are not aligned on the same axis.
+            Vector4 doorVec4 = door.transform.worldToLocalMatrix.GetColumn(2);
+            Vector4 bottleVec4 = bottle.transform.worldToLocalMatrix.GetColumn(0);
+
+            Vector2 doorVec2 = new Vector2(doorVec4.x, doorVec4.z);
+            Vector2 bottleVec2 = new Vector2(bottleVec4.x, bottleVec4.z);
+
+
+            float theta = AngleBetween(doorVec2, bottleVec2) * 180 / (float)Math.PI;
+
+            bottle.transform.Rotate(new Vector3(0, theta, 0));
+
+            bottleVec4 = bottle.transform.worldToLocalMatrix.GetColumn(0);
+
+            bottleVec2 = new Vector2(bottleVec4.x, bottleVec4.z);
+
+            if (Math.Abs(AngleBetween(doorVec2, bottleVec2)) > 1)
+            {
+                bottle.transform.Rotate(new Vector3(0, -2 * theta, 0));
+            }
+
+        }
+
         // child should be inactive before this is called!
         private static void ParentTo(GameObject child, GameObject parent)
         {
@@ -194,6 +251,9 @@ public sealed class ModPatches
                                 bottle.SetActive(false);
                                 ParentTo(child: bottle, parent: emptyFridge);
                                 bottle.transform.localPosition = new Vector3(x: 0, y: 0, z: -0.2f);
+
+                                PointBottleAtFridgeDoor(bottle: bottle, fridge: emptyFridge);
+
                                 bottle.SetActive(true);
                                 bottle.GetComponent<Rigidbody>().isKinematic = false;
                                 bottle.GetComponent<Rigidbody>().WakeUp();
@@ -230,6 +290,8 @@ public sealed class ModPatches
 
                                             bottle.transform.localPosition = swapLocalPos;
                                             v.gameObject.transform.localPosition = bottleLocalPos;
+
+                                            PointBottleAtFridgeDoor(bottle: bottle, fridge: emptyFridge);
 
                                             v.gameObject.SetActive(true);
                                             bottle.SetActive(true);
