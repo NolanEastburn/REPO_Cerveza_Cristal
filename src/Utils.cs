@@ -99,8 +99,10 @@ namespace Cerveza_Cristal
 
                 Level level = runManager.levelCurrent;
 
-                List<Level> nonExtractionLevels = new List<Level>() {runManager.levelArena, runManager.levelLobby, runManager.levelLobbyMenu,
-             runManager.levelMainMenu, runManager.levelRecording, runManager.levelShop, runManager.levelSplashScreen, runManager.levelTutorial};
+                List<Level> nonExtractionLevels = [runManager.levelLobby, runManager.levelLobbyMenu,
+             runManager.levelMainMenu, runManager.levelRecording, runManager.levelSplashScreen, runManager.levelTutorial,
+                    .. runManager.levelArena,
+                    .. runManager.levelShop,];
 
                 return level != null && !nonExtractionLevels.Contains(level);
             }
