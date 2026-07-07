@@ -44,7 +44,7 @@ public sealed class ModPatches
     {
         static void Postfix()
         {
-            Dictionary<string, GameObject> singleplayerPool = ModEntry.GetSingleplayerPool();
+            Dictionary<string, UnityEngine.Object> singleplayerPool = ModEntry.GetSingleplayerPool();
 
             if (singleplayerPool != null)
             {

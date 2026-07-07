@@ -9,7 +9,7 @@ using UnityEngine;
 namespace Cerveza_Cristal;
 
 // Runs after Spawn, but only runs once so we don't re-dump each time something spawns in.
-[HarmonyPatch(typeof(ValuableDirector), "Spawn")]
+[HarmonyPatch(typeof(ValuableDirector), "SpawnValuable")]
 class Dumper
 {
     private static ManualLogSource _logger { get; set; } = null;

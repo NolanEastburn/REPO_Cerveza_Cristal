@@ -39,12 +39,12 @@ public class ModEntry : BaseUnityPlugin
     public IPunPrefabPool MultiplayerPool { get; set; } = null;
 
 
-    public static Dictionary<string, GameObject> GetSingleplayerPool()
+    public static Dictionary<string, Object> GetSingleplayerPool()
     {
         // Register it in the singleplayer pool
         RunManager rmInstance = RunManager.instance;
         FieldInfo field = rmInstance.GetType().GetField("singleplayerPool", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.GetField);
-        Dictionary<string, GameObject> pool = (Dictionary<string, GameObject>)field.GetValue(rmInstance);
+        Dictionary<string, Object> pool = (Dictionary<string, Object>)field.GetValue(rmInstance);
         return pool;
     }
 
