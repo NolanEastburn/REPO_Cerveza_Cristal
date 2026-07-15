@@ -98,7 +98,10 @@ public class ValuableAddition : ModAddition
             root.AddComponent(typeof(RoomVolumeCheck));
             root.AddComponent(typeof(Rigidbody));
             root.AddComponent(typeof(PhysGrabObjectImpactDetector));
-            root.AddComponent(typeof(PhotonView));
+
+            PhotonView pv = root.AddComponent(typeof(PhotonView)) as PhotonView;
+            pv.observableSearch = PhotonView.ObservableSearch.AutoFindAll;
+
             root.AddComponent(typeof(DefaultBehaviour));
 
             // Get the "Object" GameObject (first child of the root)
