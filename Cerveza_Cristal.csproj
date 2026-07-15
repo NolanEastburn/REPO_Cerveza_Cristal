@@ -19,6 +19,8 @@
     <REPODLLPath>$(GameRoot)/REPO_Data/Managed/$(REPODLLName).dll</REPODLLPath>
     <PUNDLLName>PhotonUnityNetworking</PUNDLLName>
     <PUNDLLPath>$(GameRoot)/REPO_Data/Managed/$(PUNDLLName).dll</PUNDLLPath>
+    <PhotonRealtimeDLLName>PhotonRealtime</PhotonRealtimeDLLName>
+    <PhotonRealtimeDLLPath>$(GameRoot)/REPO_Data/Managed/$(PhotonRealtimeDLLName).dll</PhotonRealtimeDLLPath>
     <ModFolderName>nooterdooter_cerveza_cristal</ModFolderName>
     <ModFolderPath>./mod_contents</ModFolderPath>
   </PropertyGroup>
@@ -33,6 +35,9 @@
     </Reference>
     <Reference Include="$(PUNDLLName).dll">
       <HintPath>$(PUNDLLPath)</HintPath>
+    </Reference>
+    <Reference Include="$(PhotonRealtimeDLLName).dll">
+      <HintPath>$(PhotonRealtimeDLLPath)</HintPath>
     </Reference>
     <Compile Remove="$(DecompFolder)/**"/>
     <Compile Remove="AssetBundleCreation/**"/>

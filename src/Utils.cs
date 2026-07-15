@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using BepInEx.Logging;
+using Photon.Pun;
 using UnityEngine;
 
 namespace Cerveza_Cristal
@@ -113,6 +114,11 @@ namespace Cerveza_Cristal
             }
         }
 
+        public static bool IsMultiplayer()
+        {
+            return SemiFunc.IsMultiplayer();
+        }
+
         public static List<GameObject> GetLevelModValuableInstances(ValuableAddition addition)
         {
             return GetLevelGameObjectsByName(addition.Name);
@@ -153,7 +159,6 @@ namespace Cerveza_Cristal
             return new List<ValuableObject>(valuableHs.ToList<ValuableObject>());
         }
 
-        // TODO: Get this working for multiplayer as well (not super important however)
         public static void SpawnModValuable(ModValuableRegistry registry, ValuableAddition valuable)
         {
             // Check to make sure that an extraction level has been started.
@@ -165,9 +170,30 @@ namespace Cerveza_Cristal
             GameDirector director;
             try
             {
+
                 director = GetGameDirector();
-                Transform playerTransform = director.PlayerList[0].gameObject.transform;
-                UnityEngine.Object.Instantiate(registry.GetRegistryEntry(valuable).Item1, playerTransform.position, playerTransform.rotation);
+                if (!IsMultiplayer())
+                {
+                    Transform playerTransform = director.PlayerList[0].gameObject.transform;
+                    UnityEngine.Object.Instantiate(registry.GetRegistryEntry(valuable).Item1, playerTransform.position, playerTransform.rotation);
+                }
+                else if (SemiFunc.IsMasterClient())
+                {
+                    // Find the PlayerAvatar associated with the MasterClient
+                    PlayerAvatar masterPlayer = null;
+                    foreach (PlayerAvatar player in director.PlayerList)
+                    {
+                        if (player.photonView.Owner == PhotonNetwork.MasterClient)
+                        {
+                            masterPlayer = player;
+                            break;
+                        }
+                    }
+
+                    Transform playerTransform = masterPlayer.gameObject.transform;
+                    PhotonNetwork.InstantiateRoomObject(registry.GetRegistryName(valuable), playerTransform.position, playerTransform.rotation);
+                }
+
             }
             catch (RepoSingletonNullException e)
             {
