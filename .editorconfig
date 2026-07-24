@@ -1,8 +1,20 @@
 root=true
 
-[*]
+[*.cs]
 charset = utf-8
-end_of_line = cr
+end_of_line = crlf
 indent_size = 4
 indent_style = space
 trim_trailing_whitespace = true
+
+csharp_indent_block_contents = true
+csharp_indent_braces = false
+csharp_indent_case_contents = true
+
+csharp_new_line_before_open_brace = all
+csharp_new_line_before_else = true
+csharp_new_line_before_catch = true
+csharp_new_line_before_finally = true
+csharp_new_line_before_members_in_object_initializers = true
+csharp_new_line_before_members_in_anonymous_types = true
+csharp_new_line_between_query_expression_clauses = true
