@@ -13,7 +13,7 @@ public static class ModValuables
         ValuableVolume.Type.Small,
         durability: 5.0f,
         fragility: 80.0f
-    ));
+    ), additionalComponents: [typeof(JingleBehaviour)]);
 
     public static ValuableAddition[] ValuableAdditions { get; private set; } = { BOTTLE };
 }

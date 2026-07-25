@@ -1,5 +1,7 @@
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using System.Text.RegularExpressions;
 using BepInEx.Logging;
 using Photon.Pun;
 using UnityEngine;
@@ -124,22 +126,48 @@ namespace Cerveza_Cristal
             return GetLevelGameObjectsByName(addition.Name);
         }
 
-        public static List<GameObject> GetLevelGameObjectsByName(string moduleName)
+        public static List<GameObject> GetLevelGameObjectsByName(Regex regex)
         {
             List<GameObject> result = new List<GameObject>();
 
             if (!IsExtractionLevelRunning())
             {
-                _logger.LogWarning("Could not get the modules for the level because no extraction level is running!");
+                _logger.LogWarning("Could not get the GameObjects for the level because no extraction level is running!");
                 return result;
             }
 
 
             foreach (GameObject m in UnityEngine.Object.FindObjectsOfType<GameObject>(includeInactive: false))
             {
-                if (m.name.ToLower().Contains(moduleName.ToLower()))
+                if (regex.IsMatch(m.name))
                 {
                     result.Add(m);
+                }
+            }
+
+            return result;
+        }
+
+        public static List<GameObject> GetLevelGameObjectsByName(string moduleName)
+        {
+            return GetLevelGameObjectsByName(new Regex($"({moduleName})"));
+        }
+
+        public static List<GameObject> GetChildObjectsByName(GameObject parent, string nameContains)
+        {
+            return GetChildObjectsByName(parent: parent, regex: new Regex($"({nameContains})"));
+        }
+
+        public static List<GameObject> GetChildObjectsByName(GameObject parent, Regex regex)
+        {
+            List<GameObject> result = [];
+
+            foreach (Transform childT in parent.GetComponentsInChildren<Transform>())
+            {
+                GameObject child = childT.gameObject;
+                if (regex.IsMatch(child.name))
+                {
+                    result.Add(child);
                 }
             }
 
@@ -149,14 +177,9 @@ namespace Cerveza_Cristal
         public static List<ValuableObject> ContainedValuables(GameObject volume)
         {
             // Temporary HashSet to make sure we don't count valuables twice.
-            HashSet<ValuableObject> valuableHs = new HashSet<ValuableObject>();
+            HashSet<ValuableObject> valuableHs = [.. volume.gameObject.GetComponentsInChildren<ValuableObject>()];
 
-            foreach (ValuableObject v in volume.gameObject.GetComponentsInChildren<ValuableObject>())
-            {
-                valuableHs.Add(v);
-            }
-
-            return new List<ValuableObject>(valuableHs.ToList<ValuableObject>());
+            return [.. valuableHs.ToList()];
         }
 
         public static void SpawnModValuable(ModValuableRegistry registry, ValuableAddition valuable)
