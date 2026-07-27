@@ -59,21 +59,6 @@ public sealed class ModPatches
         }
     }
 
-    [HarmonyPatch(typeof(ValuableObject), "DiscoverRPC")]
-    public static class JinglePatch
-    {
-        static void Postfix(ValuableObject __instance)
-        {
-            if (__instance.gameObject.name.Contains(ModValuables.BOTTLE.Name))
-            {
-                // Play the jingle.
-                AudioSource jingle = __instance.gameObject.GetComponentInChildren<AudioSource>();
-
-                jingle.Play();
-            }
-        }
-    }
-
     [HarmonyPatch(typeof(RunManager), nameof(RunManager.SetRunLevel))]
     public static class LevelPatches
     {

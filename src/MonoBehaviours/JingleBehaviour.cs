@@ -1,15 +1,12 @@
 namespace Cerveza_Cristal;
 
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
 
 class JingleBehaviour : MonoBehaviour
 {
-    private const float OPEN_ANGLE = 80.0f;
+    private const float OPEN_ANGLE = 45.0f;
 
     private float _targetTime { get; set; } = 0.0f;
 
@@ -27,7 +24,7 @@ class JingleBehaviour : MonoBehaviour
 
     public void Start()
     {
-        _jingle = gameObject.GetComponent<AudioSource>();
+        _jingle = gameObject.GetComponentInChildren<AudioSource>();
     }
 
     public void OnEnable()
@@ -72,9 +69,7 @@ class JingleBehaviour : MonoBehaviour
     private IEnumerator PlayJingle()
     {
         _jingle.Play();
-        ModEntry.Instance.Logger.LogDebug("Playing jingle!");
         yield return new WaitUntil(() => !_jingle.isPlaying);
-        ModEntry.Instance.Logger.LogDebug("Done playing jingle!");
         Destroy(this);
         yield break;
     }
