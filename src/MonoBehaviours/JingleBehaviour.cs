@@ -22,7 +22,8 @@ class JingleBehaviour : MonoBehaviour
 
     private AudioSource _jingle { get; set; }
 
-    public void Start()
+
+    public void Awake()
     {
         _jingle = gameObject.GetComponentInChildren<AudioSource>();
     }
@@ -36,13 +37,13 @@ class JingleBehaviour : MonoBehaviour
     {
         Regex doorRegex = new Regex(@"^(D|d)oor");
 
-        // Look for the door every 10 seconds
+        // Look for the door every 5 seconds
         while (!_foundDoor)
         {
             // Raycast to find the door
             RaycastHit hitInfo;
             bool didHit = Physics.Raycast(
-                origin: transform.position,
+                origin: transform.position + new Vector3(x: 0, y: 0.1f, z: 0),
                 direction: transform.forward,
                 hitInfo: out hitInfo,
                 maxDistance: 10.0f,
@@ -60,7 +61,7 @@ class JingleBehaviour : MonoBehaviour
                 }
             }
 
-            yield return new WaitForSeconds(10.0f);
+            yield return new WaitForSeconds(5.0f);
         }
 
         yield break;
