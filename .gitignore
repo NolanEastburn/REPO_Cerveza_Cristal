@@ -13,3 +13,7 @@ REPO_Decomp/** */
 # Ignore build outputs
 mod_contents
 mod_contents/** */
+
+# Ignore .vscode folder in the Unity Project
+AssetBundleCreation/.vscode
+AssetBundleCreation/.vscode/** */
