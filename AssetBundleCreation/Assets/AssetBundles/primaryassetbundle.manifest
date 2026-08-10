@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 3024035496
+CRC: 2721915001
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 22a5a1d8f43f85dbdd526d9e2aa0dca5
+    Hash: 79a74f0b54ebb786738bbaf7b8d06806
   TypeTreeHash:
     serializedVersion: 2
     Hash: fd1d975563b3931b01623d63a129e394
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 22a5a1d8f43f85dbdd526d9e2aa0dca5
+    Hash: 79a74f0b54ebb786738bbaf7b8d06806
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -36,6 +36,6 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
+- Assets/AudioClips/Jingle.mp3
 - Assets/bottle_prefab.prefab
-- Assets/Cone.prefab
 Dependencies: []
