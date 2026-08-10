@@ -58,7 +58,7 @@
     <!-- Also Copy to the plugins folder -->
     <RemoveDir Directories="$(DockerHome)/plugins/$(ModFolderName)"/>
     <MakeDir Directories="$(DockerHome)/plugins/$(ModFolderName)"/>
-    <Exec Command="cp ./$(ModFolderName) $(DockerHome)/plugins/$(ModFolderName) -r"/>
+    <Exec Command="cp ./$(ModFolderName) $(DockerHome)/plugins -r"/>
     <Copy SourceFiles="./$(OutputPath)/$(AssemblyName).dll" DestinationFolder="$(DockerHome)/plugins/$(ModFolderName)"/>
     <Message Text="Copied mod files to $(DockerHome)/plugins/$(ModFolderName)" Importance="high"/>
   </Target>
