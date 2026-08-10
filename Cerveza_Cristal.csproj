@@ -13,6 +13,7 @@
       https://nuget.samboy.dev/v3/index.json
     </RestoreAdditionalProjectSources>
     <RootNamespace>Cerveza_Cristal</RootNamespace>
+    <DockerHome>/home/nooterdooter</DockerHome>
     <GameRoot>$(HOME)/.steam/steam/steamapps/common/REPO</GameRoot>
     <DecompFolder>./REPO_Decomp</DecompFolder>
     <REPODLLName>Assembly-CSharp</REPODLLName>
@@ -53,6 +54,13 @@
     <Exec Command="cp ./$(ModFolderName) $(ModFolderPath)/$(ModFolderName) -r"/>
     <Copy SourceFiles="./$(OutputPath)/$(AssemblyName).dll" DestinationFolder="$(ModFolderPath)/$(ModFolderName)"/>
     <Message Text="Copied mod files to $(ModFolderPath)" Importance="high"/>
+
+    <!-- Also Copy to the plugins folder -->
+    <RemoveDir Directories="$(DockerHome)/plugins/$(ModFolderName)"/>
+    <MakeDir Directories="$(DockerHome)/plugins/$(ModFolderName)"/>
+    <Exec Command="cp ./$(ModFolderName) $(DockerHome)/plugins/$(ModFolderName) -r"/>
+    <Copy SourceFiles="./$(OutputPath)/$(AssemblyName).dll" DestinationFolder="$(DockerHome)/plugins/$(ModFolderName)"/>
+    <Message Text="Copied mod files to $(DockerHome)/plugins/$(ModFolderName)" Importance="high"/>
   </Target>
 
   <Target Name="PostClean" AfterTargets="Clean">

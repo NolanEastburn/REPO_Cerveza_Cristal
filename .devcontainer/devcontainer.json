@@ -2,13 +2,19 @@
     "image": "nooterdooter/repo_cerveza_cristal:initial",
     "containerUser": "nooterdooter",
     "remoteUser": "nooterdooter",
-    "runArgs": ["--network=host"],
+    "runArgs": [
+        "--network=host"
+    ],
     "updateRemoteUserUID": true,
-    "customizations": 
-    {
-        "vscode": 
-        {
-            "extensions": ["streetsidesoftware.code-spell-checker", "ms-dotnettools.csdevkit"]
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "streetsidesoftware.code-spell-checker",
+                "ms-dotnettools.csdevkit"
+            ]
         }
-    }
+    },
+    "mounts": [
+        "source=${localEnv:HOME}/.steam/steam/steamapps/common/REPO/BepInEx/plugins,target=/home/nooterdooter/plugins,type=bind,consistency=cached"
+    ]
 }
