@@ -1,6 +1,8 @@
 namespace Cerveza_Cristal;
 
+using System;
 using System.Collections;
+using System.Reflection;
 using System.Text.RegularExpressions;
 using UnityEngine;
 
@@ -20,12 +22,21 @@ class JingleBehaviour : MonoBehaviour
 
     private GameObject _door { get; set; }
 
-    private AudioSource _jingle { get; set; }
+    private AudioSource _jingleAudioSource { get; set; }
+
+    private Sound _jingleSound { get; set; }
+
+    private Vector3 _doorLocUponOpen { get; set; } = new Vector3();
 
 
     public void Awake()
     {
-        _jingle = gameObject.GetComponentInChildren<AudioSource>();
+        _jingleAudioSource = gameObject.GetComponentInChildren<AudioSource>();
+        _jingleSound = new Sound
+        {
+            Source = _jingleAudioSource,
+            Type = AudioManager.AudioType.Default
+        };
     }
 
     public void OnEnable()
@@ -69,8 +80,55 @@ class JingleBehaviour : MonoBehaviour
 
     private IEnumerator PlayJingle()
     {
-        _jingle.Play();
-        yield return new WaitUntil(() => !_jingle.isPlaying);
+        // Play the jingle to the player who opened the door.
+        // The player who opened the door will be defined to be the player closest
+        // to the door when it was opened. I would have done the player actively grabbing the door
+        // when it was opened, but this won't always work since the door can be flung open
+        // and not actively held when it reaches its open angle.
+
+        GameDirector gameDir = null;
+        try
+        {
+            gameDir = Utils.GetGameDirector();
+        }
+        catch (RepoSingletonNullException)
+        {
+            ModEntry.Instance.Logger.LogError("Null GameDirector returned when attempting to play the jingle!");
+        }
+
+        PlayerAvatar closestPlayer = null;
+        float distance = float.MaxValue;
+        foreach (PlayerAvatar player in gameDir.PlayerList)
+        {
+            // Use reflection to get the internal isDisabled field.
+            FieldInfo field = player.GetType().GetField("isDisabled", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.GetField);
+            bool isDisabled = (bool)field.GetValue(player);
+            if (!isDisabled)
+            {
+                if (closestPlayer == null)
+                {
+                    closestPlayer = player;
+                }
+                else
+                {
+                    // Check if this player is closer to the door.
+                    float tempDist = Vector3.Distance(player.playerTransform.position, _doorLocUponOpen);
+                    if (tempDist < distance)
+                    {
+                        distance = tempDist;
+                        closestPlayer = player;
+                    }
+
+                }
+            }
+
+        }
+
+        // Closest player has now been determined.
+        ModEntry.Instance.Logger.LogInfo($"The closest player is {closestPlayer}");
+
+        _jingleSound.Play(closestPlayer.playerTransform);
+        yield return new WaitUntil(() => !_jingleAudioSource.isPlaying);
         Destroy(this);
         yield break;
     }
@@ -83,6 +141,7 @@ class JingleBehaviour : MonoBehaviour
             {
                 // Play the jingle and then cleanup this object via a co-routine.
                 _doorOpened = true;
+                _doorLocUponOpen = _door.transform.position;
                 StartCoroutine(PlayJingle());
             }
             else
