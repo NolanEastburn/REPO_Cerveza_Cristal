@@ -35,7 +35,8 @@ class JingleBehaviour : MonoBehaviour
         _jingleSound = new Sound
         {
             Source = _jingleAudioSource,
-            Type = AudioManager.AudioType.Default
+            Type = AudioManager.AudioType.Default,
+            Sounds = [_jingleAudioSource.clip]
         };
     }
 
