@@ -59,6 +59,8 @@ public class ModEntry : BaseUnityPlugin
 
     private bool _insertPressed = false;
 
+    private bool _deletePressed = false;
+
     private void Update()
     {
         if (!assetBundlesLoaded && !_failedToLoadAssetBundle)
@@ -108,8 +110,6 @@ public class ModEntry : BaseUnityPlugin
                 MultiplayerPool = new ModPrefabPool(ModValuableRegistry, Logger);
 
                 additionsRegistered = true;
-
-                //gameObject.SetActive(false);
             }
             catch (RepoSingletonNullException)
             {
@@ -118,8 +118,10 @@ public class ModEntry : BaseUnityPlugin
         }
 
         // Periodic processing.
-        if (Input.GetKey(KeyCode.Delete))
+        if (Input.GetKey(KeyCode.Delete) && !_deletePressed)
         {
+            _deletePressed = true;
+
             try
             {
                 Utils.SpawnModValuable(ModValuableRegistry, ModValuables.BOTTLE);
@@ -128,6 +130,10 @@ public class ModEntry : BaseUnityPlugin
             {
                 Logger.LogWarning(string.Format("Could not spawn the bottle because of the following exception: {0}", e.Message));
             }
+        }
+        else if (!Input.GetKey(KeyCode.Delete) && _deletePressed)
+        {
+            _deletePressed = false;
         }
 
         if (Input.GetKey(KeyCode.Insert) && !_insertPressed)
