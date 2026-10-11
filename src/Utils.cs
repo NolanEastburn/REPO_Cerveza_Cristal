@@ -1,10 +1,13 @@
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using System.Reflection;
 using System.Text.RegularExpressions;
 using BepInEx.Logging;
 using Photon.Pun;
+using Photon.Realtime;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Cerveza_Cristal
 {
@@ -223,6 +226,28 @@ namespace Cerveza_Cristal
                 _logger.LogWarning(string.Format("Could not spawn {0} due to the following exception: {1}", valuable.AssetName, e.Message));
             }
 
+        }
+
+        public static List<PlayerAvatar> GetActivePlayers()
+        {
+            List<PlayerAvatar> result = [];
+
+            PlayerAvatar[] playerAvatars = Object.FindObjectsByType<PlayerAvatar>(FindObjectsSortMode.None);
+
+            foreach (PlayerAvatar p in playerAvatars)
+            {
+                FieldInfo isDisabledField = p.GetType().GetField("isDisabled", BindingFlags.Instance | BindingFlags.NonPublic);
+                bool isDisabled = (bool)isDisabledField.GetValue(p);
+                FieldInfo playerNameField = p.GetType().GetField("playerName", BindingFlags.Instance | BindingFlags.NonPublic);
+                string playerName = playerNameField.GetValue(p) as string;
+                // Valid PlayerController checks
+                if (!isDisabled && playerName != null && !string.IsNullOrEmpty(playerName))
+                {
+                    result.Add(p);
+                }
+            }
+
+            return result;
         }
     }
 

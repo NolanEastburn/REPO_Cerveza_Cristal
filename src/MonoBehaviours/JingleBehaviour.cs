@@ -101,48 +101,57 @@ class JingleBehaviour : MonoBehaviour
         }
 
         PlayerAvatar closestPlayer = null;
-        string playerName = "NO PLAYER";
+        bool myPlayerIsClosest = false;
         float distance = float.MaxValue;
-        foreach (PlayerAvatar player in gameDir.PlayerList)
+        Vector3 playerPosition;
+        foreach (PlayerAvatar player in Utils.GetActivePlayers())
         {
-            if (player != null)
+
+            FieldInfo isLocalField = player.GetType().GetField("isLocal", BindingFlags.Instance | BindingFlags.NonPublic);
+            bool isLocal = (bool)isLocalField.GetValue(player);
+
+            FieldInfo clientPosField = player.GetType().GetField("clientPosition", BindingFlags.Instance | BindingFlags.NonPublic);
+            Vector3 clientPos = (Vector3)clientPosField.GetValue(player);
+
+            if (isLocal)
             {
-                // Use reflection to get the internal isDisabled field.
-                FieldInfo field = player.GetType().GetField("isDisabled", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.GetField);
-                bool isDisabled = (bool)field.GetValue(player);
+                playerPosition = player.playerTransform.position;
+            }
+            else
+            {
+                playerPosition = clientPos;
+            }
 
-                FieldInfo nameField = player.GetType().GetField("steamID", BindingFlags.Instance | BindingFlags.NonPublic);
-                playerName = field.GetValue(player) as string;
-                ModEntry.Instance.Logger.LogInfo($"Found player {playerName}!");
-                if (!isDisabled)
+            if (closestPlayer == null)
+            {
+                closestPlayer = player;
+                myPlayerIsClosest = isLocal;
+                distance = Vector3.Distance(playerPosition, _doorLocUponOpen);
+            }
+            else
+            {
+                // Check if this player is closer to the door.
+                float tempDist = Vector3.Distance(playerPosition, _doorLocUponOpen);
+                if (tempDist < distance)
                 {
-                    if (closestPlayer == null)
-                    {
-                        closestPlayer = player;
-                    }
-                    else
-                    {
-                        // Check if this player is closer to the door.
-                        float tempDist = Vector3.Distance(player.playerTransform.position, _doorLocUponOpen);
-                        if (tempDist < distance)
-                        {
-                            distance = tempDist;
-                            closestPlayer = player;
-                        }
-
-                    }
+                    distance = tempDist;
+                    closestPlayer = player;
+                    myPlayerIsClosest = isLocal;
                 }
+
             }
 
         }
 
+
         if (closestPlayer != null)
         {
             // Closest player has now been determined.
-            ModEntry.Instance.Logger.LogInfo($"The closest player is {playerName}");
-
-            _jingleSound.Play(closestPlayer.playerTransform);
-            yield return new WaitUntil(() => !_jingleAudioSource.isPlaying);
+            if (myPlayerIsClosest)
+            {
+                _jingleSound.Play(closestPlayer.playerTransform);
+                yield return new WaitUntil(() => !_jingleAudioSource.isPlaying);
+            }
         }
         else
         {
